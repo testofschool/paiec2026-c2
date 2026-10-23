@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "mode": "OFFLINE",
+  "files": 652,
+  "bytes": 5080479573,
+  "manifest_sha256": "09d46c62efb511713af315e167322492d599cd768a72aa9baa7c6ab7dca75eba",
+  "public_revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+  "wall_seconds": 19.810293374583125
+}

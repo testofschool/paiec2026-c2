@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "status": "BLOCKED",
+  "counts": {
+    "PASS": 10,
+    "FAIL": 0,
+    "BLOCKED": 12
+  },
+  "checks": [
+    {
+      "id": "registration.expected_file",
+      "status": "PASS",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "reason": null
+    },
+    {
+      "id": "registration.expected_sha256",
+      "status": "PASS",
+      "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+    },
+    {
+      "id": "registration.start_file",
+      "status": "PASS",
+      "actual": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+      "reason": null
+    },
+    {
+      "id": "registration.start_expected_sha256",
+      "status": "PASS",
+      "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+    },
+    {
+      "id": "registration.release_target",
+      "status": "PASS",
+      "expected": "C2",
+      "actual": "C2"
+    },
+    {
+      "id": "registration.release_reruns_before_registration",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "id": "registration.tolerance",
+      "status": "PASS",
+      "expected": 1e-06,
+      "actual": 1e-06
+    },
+    {
+      "id": "registration.hash_tolerance",
+      "status": "PASS",
+      "expected": "exact",
+      "actual": "exact"
+    },
+    {
+      "id": "observed.file.0",
+      "status": "BLOCKED",
+      "actual": null,
+      "reason": "missing_input"
+    },
+    {
+      "id": "split2.C2_ALC",
+      "status": "BLOCKED",
+      "expected": 0.18487910654403214,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split2.frozen_ALC",
+      "status": "BLOCKED",
+      "expected": 0.2015333932758017,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split2.C2_B0",
+      "status": "BLOCKED",
+      "expected": 0.24893649649887992,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split2.coverage.benchmarks",
+      "status": "BLOCKED",
+      "expected": 145,
+      "actual": null,
+      "reason": "missing_coverage"
+    },
+    {
+      "id": "split2.coverage.pairs",
+      "status": "BLOCKED",
+      "expected": 13023,
+      "actual": null,
+      "reason": "missing_coverage"
+    },
+    {
+      "id": "split3.C2_ALC",
+      "status": "BLOCKED",
+      "expected": 0.1848401766,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split3.C2_B0",
+      "status": "BLOCKED",
+      "expected": 0.2488973551,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split3.C2_B31",
+      "status": "BLOCKED",
+      "expected": 0.1468372469,
+      "actual": null,
+      "absolute_difference": null,
+      "tolerance": 1e-06,
+      "reason": "stage_not_complete"
+    },
+    {
+      "id": "split3.coverage.benchmarks",
+      "status": "BLOCKED",
+      "expected": 145,
+      "actual": null,
+      "reason": "missing_coverage"
+    },
+    {
+      "id": "split3.coverage.pairs",
+      "status": "BLOCKED",
+      "expected": 13023,
+      "actual": null,
+      "reason": "missing_coverage"
+    },
+    {
+      "id": "package.model.py",
+      "status": "PASS",
+      "expected": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "actual": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "reason": null
+    },
+    {
+      "id": "package.frozen_model.py",
+      "status": "PASS",
+      "expected": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "actual": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "reason": null
+    },
+    {
+      "id": "package.C2_r1.zip",
+      "status": "BLOCKED",
+      "expected": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "actual": null,
+      "reason": "missing_input"
+    }
+  ],
+  "experiment_reruns": 0
+}

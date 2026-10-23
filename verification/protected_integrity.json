@@ -1,0 +1,43 @@
+{
+  "checked_at_kst": "2026-10-10T13:59:43.187627+09:00",
+  "status": "PASS",
+  "files": {
+    "c2/model.py": {
+      "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "size_bytes": 11717,
+      "expected_sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "status": "PASS"
+    },
+    "irt_shrink/model.py": {
+      "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "size_bytes": 7275,
+      "expected_sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "status": "PASS"
+    },
+    "c2d2/provisional_packages/C2_r1.zip": {
+      "sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "size_bytes": 386770,
+      "expected_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "status": "PASS"
+    },
+    "c2d2/summary.json": {
+      "sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+      "size_bytes": 197683,
+      "expected_sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+      "status": "PASS"
+    },
+    "c2b0/DESIGN.md": {
+      "sha256": "fad14aff19c1797f10120696f042e0d895eeff9903e8f5a520caee044f5b8a1e",
+      "size_bytes": 3293,
+      "expected_sha256": "fad14aff19c1797f10120696f042e0d895eeff9903e8f5a520caee044f5b8a1e",
+      "status": "PASS"
+    },
+    "c2b0/prior.json": {
+      "sha256": "a6d4d375f713408dc60ef966de92bfe8bd6d0941d70f713c3516b24ad589a443",
+      "size_bytes": 4727163,
+      "expected_sha256": "a6d4d375f713408dc60ef966de92bfe8bd6d0941d70f713c3516b24ad589a443",
+      "status": "PASS"
+    }
+  },
+  "numeric_runs": 0
+}

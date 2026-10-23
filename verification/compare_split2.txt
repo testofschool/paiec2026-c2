@@ -1,0 +1,19 @@
+status=PASS
+staged_scope=split2_metrics_only
+package_checks=EXCLUDED
+PASS=15 FAIL=0 BLOCKED=0
+PASS registration.expected_file actual=63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132
+PASS registration.expected_sha256 expected=63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132 actual=63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132
+PASS registration.start_file actual=85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4
+PASS registration.start_expected_sha256 expected=63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132 actual=63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132
+PASS registration.release_target expected=C2 actual=C2
+PASS registration.release_reruns_before_registration expected=0 actual=0
+PASS registration.tolerance expected=1e-06 actual=1e-06
+PASS registration.hash_tolerance expected=exact actual=exact
+PASS observed.file.0 actual=0bab18b3b4117844ed5ac6814f7c9a413ed77309e605369849c8062da61f8c83
+PASS observed.schema_version.0 expected=1 actual=1
+PASS split2.C2_ALC expected=0.18487910654403214 actual=0.18487910654403214 absolute_difference=0.0 tolerance=1e-06
+PASS split2.frozen_ALC expected=0.2015333932758017 actual=0.20153339327580172 absolute_difference=2.7755575615628914e-17 tolerance=1e-06
+PASS split2.C2_B0 expected=0.24893649649887992 actual=0.24893649649887994 absolute_difference=2.7755575615628914e-17 tolerance=1e-06
+PASS split2.coverage.benchmarks expected=145 actual=145
+PASS split2.coverage.pairs expected=13023 actual=13023

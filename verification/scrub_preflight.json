@@ -1,0 +1,687 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "files_scanned": 51,
+  "archive_members_scanned": 0,
+  "forbidden_hit_count": 2955,
+  "forbidden_counts_by_pattern": {
+    "P006": 2911,
+    "P007": 44
+  },
+  "forbidden_hit_examples": [
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270491
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270539
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270620
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270665
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270745
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270789
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270867
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 270913
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 272409
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 272515
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 272621
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 273181
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 273229
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275624
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275672
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275745
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275793
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275873
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275921
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 275994
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 276039
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 276108
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 276152
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 276220
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 276266
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 305921
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 306013
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 306147
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308208
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308300
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308431
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308869
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308914
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 308994
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309037
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309114
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309159
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309232
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309277
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309348
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 309395
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 346274
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 346582
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 346890
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 347198
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 347506
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 347814
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 348122
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 348430
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 348738
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 349045
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 349353
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 349662
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 349970
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 350279
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 350587
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 350896
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 351205
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 351512
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 351821
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 352130
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 352439
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 352748
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 353057
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 353366
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 353675
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 353984
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 354294
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 354603
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 354913
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 355222
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 355532
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 355841
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 375321
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 375550
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 375781
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 376012
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 376242
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 376473
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 376703
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 376934
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 377164
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 377395
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 377626
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 377858
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 378091
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 378322
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 378554
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 378785
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 379016
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 379249
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 379481
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 379713
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 379945
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 380194
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 380444
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 380694
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 380943
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 381192
+    },
+    {
+      "pattern_id": "P006",
+      "file": "src/archive_payload/prior.json",
+      "location_kind": "content",
+      "normalized_character_offset": 381442
+    }
+  ],
+  "forbidden_counts_by_file": {
+    "src/archive_payload/prior.json": {
+      "P006": 2911,
+      "P007": 44
+    }
+  },
+  "file_sha256": {
+    ".gitignore": "875c5ab9bdf3076096ce7500abe0ef9d56a7a66db92cee4ae2ff4d4884a6ef2c",
+    "LICENSE": "79ce570e0403b5ae1c401f829ff1f56d96f1cdae1999cc40a0651c5fce6d1c68",
+    "README.md": "239e2aa511d7583178f1ef6384294cb6accbfbce65a3fbfcc458a255bf620a8a",
+    "RELEASE_REPORT.md": "e10ffd88946f06f32e6c48280c7f87549fa713af9039b7574bc8bfd46deff9e4",
+    "requirements.lock": "d256dfdedd4c86a984c710838fa2a7652a5e1732c17aef9e1e185929bdcbc28e",
+    "scripts/_common.sh": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+    "scripts/build_zip.sh": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+    "scripts/evaluate_split2.sh": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+    "scripts/evaluate_split3.sh": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+    "scripts/official_checker.sh": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+    "scripts/prepare_data.sh": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+    "scripts/train_prior.sh": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+    "src/archive_payload/README.md": "84932dd52a371b94c12c1f33b9355968aeba4bc2bb48f479582f19347af6bb03",
+    "src/archive_payload/prior.json": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+    "src/build_zip.py": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+    "src/c2/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/c2/model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "src/check_official.py": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+    "src/corehelpers/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/corehelpers/evaluation.py": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+    "src/corehelpers/io.py": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+    "src/corehelpers/measure.py": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+    "src/corehelpers/protocol.py": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+    "src/corehelpers/split3.py": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+    "src/evaluate.py": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+    "src/irt_shrink/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/irt_shrink/model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "src/irt_shrink/train_prior.py": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+    "src/prepare_data.py": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+    "src/resident_files.py": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+    "src/source_manifest.json": "555f778566467e4469e0b9b4e0422dd2fd11115f74b393cf0959564594379a0f",
+    "src/train.py": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+    "verification/archive_payload_manifest.json": "f4a89cd195b5b2b1537930fdf588e1a572d981389d0b13fd737f125750c524f5",
+    "verification/compare_expected.py": "51bf2727086ae59afc6a53f5a6bfb176b0bc2eb7d809f4c5167bdb4d48a34bcd",
+    "verification/compare_preflight.json": "6cea3c5e5223022cbf4f6b64dc47d8a204f7b7be526101769b61b06ef68c097c",
+    "verification/compare_preflight.txt": "42504cd7cc70b27d165e066af69fec0fbc2fbb1e2ec974094ef56c12ba14119a",
+    "verification/data_provenance.json": "182080ce9ff958b784a120fa98a5a781db2940317d2837f1298daf5fcddb6450",
+    "verification/environment_provenance.json": "1d288e62b894fb0bcb4c38b819b7bb13549c2b696c21934e876e39f012cf6fc5",
+    "verification/expected_values.json": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+    "verification/integration_review.json": "d9357b58cef97fb075263c44088488c285076bbfd17d6b2011d3e9df06525e48",
+    "verification/packaging_review.json": "7476600c144e3946f8360d9876a4c81e651a7cc461d47a787741bc396f10f9ce",
+    "verification/preparation_timing.json": "a24f58ac5965bbf7fe6c6cec66826e20bf0991d3d46614138f6e90622137d727",
+    "verification/protected_integrity.json": "cbd681681d1d4660da47d553872fe0a6c140483f172028fcf0b63c52e9eeabbc",
+    "verification/public_input_manifest.json": "09d46c62efb511713af315e167322492d599cd768a72aa9baa7c6ab7dca75eba",
+    "verification/release_start.json": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+    "verification/release_status.json": "1e2e41418c84f23b885242d793e04069987b51b89811c6882f30ae5b60907c0f",
+    "verification/scrub_conflicts.json": "2564b42d79f80d16154b1d28660cdd7174245d19b8da09895c7dc5fed1f15ed4",
+    "verification/scrub_preflight.json": "67e21c2168760201f1f05d7cd1388dd49d024a05a1387808d6f155bf4b131d14",
+    "verification/scrub_scan.py": "384421f62552025a75640c2369ff538c87e84b8c3802a59622fb5476745254b5",
+    "verification/source_diffs.txt": "0c874c4e8b3e6c63f9621e3864aa658e9caa069b2f1885a1fb4de519198c31e0",
+    "verification/verification_review.json": "ffdf0f89c8454e08c42fcd5c58cf2032cfd0f8fdfef509cc49cf6b40defb51d6"
+  },
+  "allowed_author_hits": [
+    {
+      "pattern_id": "P900",
+      "file": "LICENSE",
+      "location_kind": "content",
+      "normalized_character_offset": 32
+    }
+  ],
+  "blocked": [],
+  "errors": [],
+  "matching": "case-insensitive NFC; token text, credential syntax, and names",
+  "model_or_experiment_calls": 0,
+  "network_calls": 0,
+  "all_resident_files_and_supported_archive_members_scanned": true,
+  "forbidden_hit_examples_omitted": 2855
+}

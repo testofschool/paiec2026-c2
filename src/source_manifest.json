@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "scientific_execution": "UNRUN",
+  "original_sources": {
+    "c2/model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "irt_shrink/model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "irt_shrink/train_prior.py": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+    "irt_shrink/lobo_eval.py": "3f29cd9b1f2a3034f42867c8f3eebb291325c9597c92d2e3ce1294b03549e197",
+    "headroom/measure.py": "a2ed788351ff1029a72f3d4bfe6adc7a41b97b9c6c10c050a12cd705d4bb8248",
+    "c2d2/prepare.py": "9307ff1b1cd5393d15ad6413dd30370d1ea9f9976b90e367f62fd04868634154",
+    "c2d2/evaluate.py": "e58ea02c8b494db458e3403b7ae8a899bc99d5fdbf8e28c3dccb94cb028c71ce",
+    "c2b0/run.py": "795cf31b7b0d3cdaa969a9ba3444be3596ee702e26c9cd2551a3e5f5f4b67fca"
+  },
+  "copied_symbols": [
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "BUDGETS",
+      "line_start": 37,
+      "line_end": 37,
+      "source_sha256": "4fda13aaa79c616f935c9890a0ecd7f87e13fd485eb49b8fe6eb552e234cab62",
+      "ast_sha256": "eb2ce43a39342177a5b3fd2796b5288cafd6c56e702a85cc31d0007ef064c920"
+    },
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "WEIGHTS",
+      "line_start": 38,
+      "line_end": 38,
+      "source_sha256": "a0534d9d4e511aab2226585baf13beef041fe2b8c5d506da56d6da825070f1c9",
+      "ast_sha256": "8a32aaff8512cbc6835cb1a8272b3b98784f6b3e68f7369e29356add7bc03b91"
+    },
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "MIN_ITEMS",
+      "line_start": 39,
+      "line_end": 39,
+      "source_sha256": "9662f5020aa0f66174c85387096aec314b96fd66977f7d63d7228a53b3a21840",
+      "ast_sha256": "9bb9f72f16508d456474fad19dc7c03839dc178c6b17e986f685142576dd242e"
+    },
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "N_FOLDS",
+      "line_start": 40,
+      "line_end": 40,
+      "source_sha256": "3a39a57cd526e225d560bb8a5004756f27d5081411fd6a93a4e92eedca689739",
+      "ast_sha256": "5e2d0e8d3bb6ffd440f616dfb5f02895f1273b92149283fef22d67bc27b5cca7"
+    },
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "_h",
+      "line_start": 43,
+      "line_end": 44,
+      "source_sha256": "0450529f807c86d7df85e037d4f8d803dcf3d31672882c729347b560e25ac46f",
+      "ast_sha256": "6274da9f434c98b95466327a721c9863923d4c97e358b8feeee2cab8732226f0"
+    },
+    {
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "fold_of",
+      "line_start": 47,
+      "line_end": 48,
+      "source_sha256": "0942a6e98ec54769427519d3a2936e5af85cb986f526cb16d071fb32229d67c4",
+      "ast_sha256": "9db4dd3b24092cfdf6f7f765777165f09b0c5bce903f280c6fe626a61bfb694a"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "BUDGETS",
+      "line_start": 28,
+      "line_end": 28,
+      "source_sha256": "86cdf774024c25ac9ff41d6cf15334a58a1298b45acc82015af714f35a33517d",
+      "ast_sha256": "556e9450aed43205faed5e861b0656fda07053623acc0454f369222258aba6e9"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "WEIGHTS",
+      "line_start": 29,
+      "line_end": 29,
+      "source_sha256": "227f03d984413ce0a35a9177d9040cd24e876da7f02424de16cca50b2fb987d3",
+      "ast_sha256": "3a77ec4b5ece6c3f752fdf224523f0cd4766730140c600eb06405e6f6a8d1ffe"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "SUBJECT_FIELDS",
+      "line_start": 30,
+      "line_end": 31,
+      "source_sha256": "95dce05537955b4ba5fc45021b41cdb561c86569c872d847e325e743e153787b",
+      "ast_sha256": "7d8a7387bab6ec2f694a6e9dd0b035836096630b05bc22cab942f9575996d456"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "ITEM_FIELDS",
+      "line_start": 32,
+      "line_end": 32,
+      "source_sha256": "3801068e04a85046bcf1589351abe3691d5442f935ed6802f7618cd1a82f070c",
+      "ast_sha256": "450ac49d0b1ed7c18a4539ea6529944bef741ee2747cd8e92f37290fcb48f06a"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "sha",
+      "line_start": 35,
+      "line_end": 40,
+      "source_sha256": "6ff24c71d910db461b53332b5d8219f9469c0a313ee151a8459e3d8363b443cd",
+      "ast_sha256": "d4397bdbff25c9b3f62f050884ae53c1fde09e346e514eca1b5ce5d27b4ec780"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "clean",
+      "line_start": 43,
+      "line_end": 44,
+      "source_sha256": "16d92987a5b5255f82a02d0a7cdc77e32a948bbd5c7b7b2305437a0758d4ddba",
+      "ast_sha256": "9e075f668c65fd8423e5576f9b2160383e564ea5f59479c6bfcd178ad8fb6c53"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "read_bench",
+      "line_start": 47,
+      "line_end": 69,
+      "source_sha256": "20f0fc6336c227775a7590e5a2406c43ee8cf1a10a8b35836889beca393d2f89",
+      "ast_sha256": "c93a53bda4ea34f2ea8fa52de1d3b5d1c501491fdbfa3be9b5f40cf0a820f4a5"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_prior_stats",
+      "line_start": 72,
+      "line_end": 116,
+      "source_sha256": "6086d30cecdc113f88f6a99b6ea2a1aca55803cfea16faa07c373f8692ff94ec",
+      "ast_sha256": "c9c99a46addd6c79f792341e91653305fb5bbc55a59be8c6eee7a128ec76068f"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "prepare",
+      "line_start": 119,
+      "line_end": 155,
+      "source_sha256": "eb7a30d259a9e01b2ad9dafec49d1d3fac021a21c330b885c4bf61877fe4d4f6",
+      "ast_sha256": "21dcdd98d754da4199bd6e64b2a9b4aeadf9089f089604bbc064c64b62e57536"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_irt",
+      "line_start": 158,
+      "line_end": 187,
+      "source_sha256": "21e3a6d58eb19e865867a204a9e3dcb7876b79da13bfed1cf07b0a471b81f566",
+      "ast_sha256": "274cd263e52437c700434c1ebd3c5a2cdd1666167f507d8f22ac44c24348ebf3"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "brier",
+      "line_start": 190,
+      "line_end": 191,
+      "source_sha256": "a13c23f83929ed6d3b122f3a6fbf0b411d75f841f508e9bb02272fb769e73317",
+      "ast_sha256": "d48f8d74b42d2a8aee9119f58d69d19114ef2a38ef54cc299ead70dcc81bb8f0"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "item_table",
+      "line_start": 194,
+      "line_end": 205,
+      "source_sha256": "48284c83ec486964606960283cfa2e9cd98d30b74d0b1099d2ab8d44b97312f6",
+      "ast_sha256": "d958a5a8af421112f4b5fd537851d508434f35c30b36495ed3d389552b23060a"
+    },
+    {
+      "original_path": "headroom/measure.py",
+      "symbol": "atomic_text",
+      "line_start": 302,
+      "line_end": 307,
+      "source_sha256": "ad81c5bbb65697da8eae80e6781e8e0d4f6dbe56bcdf1c9cb21352ac9c4c9611",
+      "ast_sha256": "42cc41731f4b2e4bdd14002d1748d117f42f68f92578917395c036cdb7df3f1b"
+    },
+    {
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "split_seed",
+      "line_start": 33,
+      "line_end": 34,
+      "source_sha256": "a81511759fb5f81baaf47fe5af30ca2a6b2081d0aa549777be18f72029484a0c",
+      "ast_sha256": "66ff6ed46b28b30f1c4b0ebeb6ddde8ccb2e80732535f81084c7251763917a9d"
+    },
+    {
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "partition_cells",
+      "line_start": 37,
+      "line_end": 52,
+      "source_sha256": "7a8c6de3c5278a2e061fcf8293fe7fc48758323a6ee6b172e1b0a6339f76dcd6",
+      "ast_sha256": "27dce30dccb975f591c5abb3caa6ea865e4a85f66683a2448e01a2bc436e33d8"
+    },
+    {
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "candidate_probabilities",
+      "line_start": 55,
+      "line_end": 88,
+      "source_sha256": "728690bb9e44b0a3fc6beb6a6ff432e3be6390e4c0950a1fed0515d0567b0cdd",
+      "ast_sha256": "88c027e6d51f10a19ad658823259b0bded2a1a3784102a8819d922dcffb0d4e1"
+    },
+    {
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "simulate_benchmark",
+      "line_start": 91,
+      "line_end": 167,
+      "source_sha256": "203f9144d8e8bb3f6e42a72779f2c510c4b50966b2942d8f5b278800e27ff86c",
+      "ast_sha256": "ce113cb12b1b9a4af0b377ce96c5a246e418bfadbb6a45aea382eb4ef45f07b4"
+    },
+    {
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "validate_frame",
+      "line_start": 191,
+      "line_end": 204,
+      "source_sha256": "ea0863bc068e715d85dcb36b87d55c68c6023544723fde1a8f3b238c5cad2e54",
+      "ast_sha256": "300d91efb5919a9e1239c3f98f6379e7cc7c64eff35a5d095dde5aa01731c187"
+    },
+    {
+      "original_path": "c2b0/run.py",
+      "symbol": "main:ev.split_seed RHS",
+      "line_start": 325,
+      "line_end": 325,
+      "source_sha256": "eab07e4c217558ce5ffb5b98893f7d2d43c4b95c4293628e041c2065f0a81e26",
+      "ast_sha256": "232ee388a867fcd27323ba23859a28296bc977751d69e243f023e5ac229f47bb"
+    },
+    {
+      "original_path": "c2d2/prepare.py",
+      "symbol": "FIXED_OPTIONS",
+      "line_start": 27,
+      "line_end": 32,
+      "source_sha256": "436373611d9496905344663e796bc9184442f86e5a101e51428664d9e036dbac",
+      "ast_sha256": "7703968c6bf29284c85c4065703ba659248c617d72ce662c3360de8fb0a7a154"
+    },
+    {
+      "original_path": "c2d2/prepare.py",
+      "symbol": "prepare:C2 target and 1PL statements",
+      "line_start": 114,
+      "line_end": 135,
+      "source_sha256": "31daa1c44bcf28a60514dbb33d8417893e6cdd8d5c337d5ef30e7370e44dcba3",
+      "ast_sha256": "901abffea7b490a3b5c204b8bad9b9365a2190d2a0eae696cd3ec7d802f01c5d"
+    },
+    {
+      "original_path": "c2d2/prepare.py",
+      "symbol": "prepare:fold and public variance pooling",
+      "line_start": 141,
+      "line_end": 156,
+      "source_sha256": "998bd7336bfda53719ea0d37127ee76061ee51906ba770129644e136ed9c1b35",
+      "ast_sha256": "fc445c68cc9aaac873b7b7f24969168a90152dc8906828e4382adc3abc559ca0"
+    }
+  ],
+  "static_checks": [
+    {
+      "released_path": "c2/model.py",
+      "original_path": "c2/model.py",
+      "check": "exact_bytes",
+      "status": "PASS",
+      "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8"
+    },
+    {
+      "released_path": "irt_shrink/model.py",
+      "original_path": "irt_shrink/model.py",
+      "check": "exact_bytes",
+      "status": "PASS",
+      "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6"
+    },
+    {
+      "released_path": "irt_shrink/train_prior.py",
+      "original_path": "irt_shrink/train_prior.py",
+      "check": "exact_bytes",
+      "status": "PASS",
+      "sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "sha",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "clean",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "read_bench",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_prior_stats",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "prepare",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_irt",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "brier",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "item_table",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "atomic_text",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "split_seed",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "partition_cells",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "candidate_probabilities",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "simulate_benchmark",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "validate_frame",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "_h",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "fold_of",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "train.py",
+      "original_path": "c2d2/prepare.py",
+      "symbol": "target_and_1PL_statements",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "train.py",
+      "original_path": "c2d2/prepare.py",
+      "symbol": "variance_pooling_statements",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/split3.py",
+      "original_path": "c2b0/run.py",
+      "symbol": "main:ev.split_seed RHS",
+      "check": "exact_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "BUDGETS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "WEIGHTS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "MIN_ITEMS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "N_FOLDS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "BUDGETS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "WEIGHTS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "SUBJECT_FIELDS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "ITEM_FIELDS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "train.py",
+      "original_path": "c2d2/prepare.py",
+      "symbol": "FIXED_OPTIONS",
+      "check": "exact_source_and_ast",
+      "status": "PASS"
+    },
+    {
+      "released_path": "evaluate.py",
+      "symbol": "validate_training_receipt",
+      "check": "stdlib_synthetic_receipt_and_source_flow_checks",
+      "status": "PASS",
+      "cases": 16,
+      "numerical_execution": "UNRUN",
+      "evidence": "verification/integration_review.json"
+    }
+  ],
+  "syntax_checked_files": [
+    "c2/__init__.py",
+    "c2/model.py",
+    "corehelpers/__init__.py",
+    "corehelpers/evaluation.py",
+    "corehelpers/io.py",
+    "corehelpers/measure.py",
+    "corehelpers/protocol.py",
+    "corehelpers/split3.py",
+    "evaluate.py",
+    "irt_shrink/__init__.py",
+    "irt_shrink/model.py",
+    "irt_shrink/train_prior.py",
+    "train.py"
+  ],
+  "non_numeric_adaptations": [
+    "portable source imports and path globals",
+    "explicit public data, artifact and fresh output CLI paths",
+    "file residency and provenance checks",
+    "fixed full-population coverage checks",
+    "output metrics schema",
+    "training receipt binds current complete sources, raw inputs, coverage and fold artifacts before evaluation"
+  ],
+  "released_sources": {
+    "c2/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "c2/model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "corehelpers/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "corehelpers/evaluation.py": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+    "corehelpers/io.py": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+    "corehelpers/measure.py": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+    "corehelpers/protocol.py": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+    "corehelpers/split3.py": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+    "evaluate.py": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+    "irt_shrink/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "irt_shrink/model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "irt_shrink/train_prior.py": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+    "train.py": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622"
+  }
+}

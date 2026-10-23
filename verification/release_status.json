@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "updated_at_kst": "2026-10-10T14:35:26.682521+09:00",
+  "release_target": "C2",
+  "trigger": "c2e_report_exists",
+  "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+  "author_approvals_pending": [],
+  "counts": {
+    "numeric_release_reruns": 3,
+    "installation_sessions": 1,
+    "fresh_copy_tests": 1,
+    "built_archives": 1,
+    "official_checker_runs": 1,
+    "prior_training_runs": 1,
+    "evaluate_split2_runs": 1,
+    "evaluate_split3_runs": 1
+  },
+  "acceptance": {
+    "fresh_copy": "PASS_25_FAIL_0_BLOCKED_0",
+    "scrub": "PASS_0_HITS_0_BLOCKED_0_ERRORS; final byte receipt detached",
+    "numeric_source_diff": "PASS_UNCHANGED_NUMERICS",
+    "release_report": "COMPLETE; every file SHA/size including report in detached manifest",
+    "public_identifier_source_audit": "PASS_2629_MATCHED_0_UNMATCHED",
+    "compare_split2": {
+      "schema_version": 1,
+      "status": "PASS",
+      "counts": {
+        "PASS": 15,
+        "FAIL": 0,
+        "BLOCKED": 0
+      },
+      "staged_scope": "split2_metrics_only",
+      "selected_splits": [
+        "split2"
+      ],
+      "package_checks": "EXCLUDED",
+      "full_acceptance_check": false,
+      "checks": [
+        {
+          "id": "registration.expected_file",
+          "status": "PASS",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "reason": null
+        },
+        {
+          "id": "registration.expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.start_file",
+          "status": "PASS",
+          "actual": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+          "reason": null
+        },
+        {
+          "id": "registration.start_expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.release_target",
+          "status": "PASS",
+          "expected": "C2",
+          "actual": "C2"
+        },
+        {
+          "id": "registration.release_reruns_before_registration",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "registration.tolerance",
+          "status": "PASS",
+          "expected": 1e-06,
+          "actual": 1e-06
+        },
+        {
+          "id": "registration.hash_tolerance",
+          "status": "PASS",
+          "expected": "exact",
+          "actual": "exact"
+        },
+        {
+          "id": "observed.file.0",
+          "status": "PASS",
+          "actual": "0bab18b3b4117844ed5ac6814f7c9a413ed77309e605369849c8062da61f8c83",
+          "reason": null
+        },
+        {
+          "id": "observed.schema_version.0",
+          "status": "PASS",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "split2.C2_ALC",
+          "status": "PASS",
+          "expected": 0.18487910654403214,
+          "actual": 0.18487910654403214,
+          "absolute_difference": 0.0,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.frozen_ALC",
+          "status": "PASS",
+          "expected": 0.2015333932758017,
+          "actual": 0.20153339327580172,
+          "absolute_difference": 2.7755575615628914e-17,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.C2_B0",
+          "status": "PASS",
+          "expected": 0.24893649649887992,
+          "actual": 0.24893649649887994,
+          "absolute_difference": 2.7755575615628914e-17,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.coverage.benchmarks",
+          "status": "PASS",
+          "expected": 145,
+          "actual": 145,
+          "reason": null
+        },
+        {
+          "id": "split2.coverage.pairs",
+          "status": "PASS",
+          "expected": 13023,
+          "actual": 13023,
+          "reason": null
+        }
+      ],
+      "experiment_reruns": 0
+    },
+    "compare_split3": {
+      "schema_version": 1,
+      "status": "PASS",
+      "counts": {
+        "PASS": 15,
+        "FAIL": 0,
+        "BLOCKED": 0
+      },
+      "staged_scope": "split3_metrics_only",
+      "selected_splits": [
+        "split3"
+      ],
+      "package_checks": "EXCLUDED",
+      "full_acceptance_check": false,
+      "checks": [
+        {
+          "id": "registration.expected_file",
+          "status": "PASS",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "reason": null
+        },
+        {
+          "id": "registration.expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.start_file",
+          "status": "PASS",
+          "actual": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+          "reason": null
+        },
+        {
+          "id": "registration.start_expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.release_target",
+          "status": "PASS",
+          "expected": "C2",
+          "actual": "C2"
+        },
+        {
+          "id": "registration.release_reruns_before_registration",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "registration.tolerance",
+          "status": "PASS",
+          "expected": 1e-06,
+          "actual": 1e-06
+        },
+        {
+          "id": "registration.hash_tolerance",
+          "status": "PASS",
+          "expected": "exact",
+          "actual": "exact"
+        },
+        {
+          "id": "observed.file.0",
+          "status": "PASS",
+          "actual": "1d5c4f029ef325e8221a62d9ad42196b5e350416c78ad72cbffd86049d787790",
+          "reason": null
+        },
+        {
+          "id": "observed.schema_version.0",
+          "status": "PASS",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "split3.C2_ALC",
+          "status": "PASS",
+          "expected": 0.1848401766,
+          "actual": 0.18484017662654537,
+          "absolute_difference": 2.6545377007636262e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.C2_B0",
+          "status": "PASS",
+          "expected": 0.2488973551,
+          "actual": 0.24889735512042893,
+          "absolute_difference": 2.042893632037135e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.C2_B31",
+          "status": "PASS",
+          "expected": 0.1468372469,
+          "actual": 0.1468372469286715,
+          "absolute_difference": 2.8671509610944668e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.coverage.benchmarks",
+          "status": "PASS",
+          "expected": 145,
+          "actual": 145,
+          "reason": null
+        },
+        {
+          "id": "split3.coverage.pairs",
+          "status": "PASS",
+          "expected": 13023,
+          "actual": 13023,
+          "reason": null
+        }
+      ],
+      "experiment_reruns": 0
+    },
+    "compare_final": {
+      "schema_version": 1,
+      "status": "PASS",
+      "counts": {
+        "PASS": 25,
+        "FAIL": 0,
+        "BLOCKED": 0
+      },
+      "staged_scope": "full_both_splits_and_package",
+      "selected_splits": [
+        "split2",
+        "split3"
+      ],
+      "package_checks": "REQUIRED",
+      "full_acceptance_check": true,
+      "checks": [
+        {
+          "id": "registration.expected_file",
+          "status": "PASS",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "reason": null
+        },
+        {
+          "id": "registration.expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.start_file",
+          "status": "PASS",
+          "actual": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+          "reason": null
+        },
+        {
+          "id": "registration.start_expected_sha256",
+          "status": "PASS",
+          "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+          "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+        },
+        {
+          "id": "registration.release_target",
+          "status": "PASS",
+          "expected": "C2",
+          "actual": "C2"
+        },
+        {
+          "id": "registration.release_reruns_before_registration",
+          "status": "PASS",
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "registration.tolerance",
+          "status": "PASS",
+          "expected": 1e-06,
+          "actual": 1e-06
+        },
+        {
+          "id": "registration.hash_tolerance",
+          "status": "PASS",
+          "expected": "exact",
+          "actual": "exact"
+        },
+        {
+          "id": "observed.file.0",
+          "status": "PASS",
+          "actual": "0bab18b3b4117844ed5ac6814f7c9a413ed77309e605369849c8062da61f8c83",
+          "reason": null
+        },
+        {
+          "id": "observed.schema_version.0",
+          "status": "PASS",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "observed.file.1",
+          "status": "PASS",
+          "actual": "1d5c4f029ef325e8221a62d9ad42196b5e350416c78ad72cbffd86049d787790",
+          "reason": null
+        },
+        {
+          "id": "observed.schema_version.1",
+          "status": "PASS",
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "split2.C2_ALC",
+          "status": "PASS",
+          "expected": 0.18487910654403214,
+          "actual": 0.18487910654403214,
+          "absolute_difference": 0.0,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.frozen_ALC",
+          "status": "PASS",
+          "expected": 0.2015333932758017,
+          "actual": 0.20153339327580172,
+          "absolute_difference": 2.7755575615628914e-17,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.C2_B0",
+          "status": "PASS",
+          "expected": 0.24893649649887992,
+          "actual": 0.24893649649887994,
+          "absolute_difference": 2.7755575615628914e-17,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split2.coverage.benchmarks",
+          "status": "PASS",
+          "expected": 145,
+          "actual": 145,
+          "reason": null
+        },
+        {
+          "id": "split2.coverage.pairs",
+          "status": "PASS",
+          "expected": 13023,
+          "actual": 13023,
+          "reason": null
+        },
+        {
+          "id": "split3.C2_ALC",
+          "status": "PASS",
+          "expected": 0.1848401766,
+          "actual": 0.18484017662654537,
+          "absolute_difference": 2.6545377007636262e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.C2_B0",
+          "status": "PASS",
+          "expected": 0.2488973551,
+          "actual": 0.24889735512042893,
+          "absolute_difference": 2.042893632037135e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.C2_B31",
+          "status": "PASS",
+          "expected": 0.1468372469,
+          "actual": 0.1468372469286715,
+          "absolute_difference": 2.8671509610944668e-11,
+          "tolerance": 1e-06,
+          "reason": null
+        },
+        {
+          "id": "split3.coverage.benchmarks",
+          "status": "PASS",
+          "expected": 145,
+          "actual": 145,
+          "reason": null
+        },
+        {
+          "id": "split3.coverage.pairs",
+          "status": "PASS",
+          "expected": 13023,
+          "actual": 13023,
+          "reason": null
+        },
+        {
+          "id": "package.model.py",
+          "status": "PASS",
+          "expected": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+          "actual": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+          "reason": null
+        },
+        {
+          "id": "package.frozen_model.py",
+          "status": "PASS",
+          "expected": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+          "actual": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+          "reason": null
+        },
+        {
+          "id": "package.C2_r1.zip",
+          "status": "PASS",
+          "expected": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+          "actual": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+          "reason": null
+        }
+      ],
+      "experiment_reruns": 0
+    },
+    "post_run_integrity": "PASS",
+    "scrub_after_execution": "PASS_0_HITS_0_BLOCKED",
+    "official_checker": "PASS_FULL_DEFAULT_PREDICTION; optional acquisition skipped without labeling module"
+  },
+  "network_used_for_release": 1,
+  "retry_policy": "No automatic installation or reproduction retry",
+  "quiet_when_unchanged": true,
+  "next_action": "NONE; local release completed; stop hourly follow-up; no automatic reexecution",
+  "author_approved_at": "2026-10-10",
+  "scrub_spec_correction": "P006 and P007 removed globally; prior/archive immutable; identifier-source audit required",
+  "scientific_source_frozen": true,
+  "run_directory_name": "paiec-c2-fresh-s2mcj8kw",
+  "run_parent_environment": "system temporary directory",
+  "installation_attempt_reserved": false,
+  "phase": "local_release_complete",
+  "installed_environment_status": "PASS",
+  "installation_exit_code": 0,
+  "network_use": "One authorized fresh-venv package installation completed",
+  "phase_exit_code": 0,
+  "completed_at_kst": "2026-10-10T14:35:26.682521+09:00",
+  "release_elapsed_to_completion_seconds": 3273.190805,
+  "historical_preflight": {
+    "status": "BLOCKED",
+    "PASS": 10,
+    "FAIL": 0,
+    "BLOCKED": 12
+  },
+  "completion_evidence": "Measured report, full comparison, post-run integrity, plus detached final-tree scrub and manifest"
+}

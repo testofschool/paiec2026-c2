@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "PASS_RECORDED_PUBLIC_TABLE_PROVENANCE",
+  "scope": "Read-only comparison of resident source inventories, item-download receipts, table manifest and independent audit records. No downloads, package imports, numeric experiments or source-table writes.",
+  "public_source": {
+    "repository": "aims-foundations/measurement-db",
+    "repository_type": "dataset",
+    "revision": "54074453da7b9911be0f48e4c560be547bc84d21",
+    "repository_url": "https://huggingface.co/datasets/aims-foundations/measurement-db",
+    "remote_table_directory": "{benchmark}/formatted_tables",
+    "item_url_pattern": "https://huggingface.co/datasets/aims-foundations/measurement-db/resolve/54074453da7b9911be0f48e4c560be547bc84d21/{benchmark}/formatted_tables/items.parquet?download=true",
+    "eligibility": "The benchmark metadata records response_type=binary and granularity=item.",
+    "eligible_benchmarks": 163,
+    "scored_benchmarks": 145,
+    "scored_subject_benchmark_pairs": 13023
+  },
+  "original_corpus_manifest": {
+    "status": "INTENTIONALLY_SCOPED_REQUIRED_TABLES_ONLY",
+    "sha256": "16b56d2164a98e6df9483ccfba1c27f753eeb850f8b3fb9d78be2bac1b50c076",
+    "revision_matches_item_receipt": true,
+    "eligible_directories": 163,
+    "listed_files": 489,
+    "listed_table_types": ["benchmarks", "subjects", "response"],
+    "required_tables_only": true,
+    "explicitly_omitted_table_types": ["items", "traces"],
+    "required_table_bytes": 2064539922,
+    "interpretation": "The omission is explicit in the manifest. Its file list covers the original three required tables per eligible benchmark and does not claim to enumerate subsequently added item tables. This is a separate manifest scope, rather than evidence that item files were missing or reconstructed."
+  },
+  "separate_item_preparation": {
+    "status": "COMPLETE_IN_RECORDED_RECEIPT",
+    "receipt_sha256": "c70cabe314a763bd373db6d24c71b7aaf6536eec9fc0976f28aa2d737bec9eb5",
+    "public_training_only": true,
+    "items_only": true,
+    "files": 163,
+    "bytes": 3015939651,
+    "rows": 4922461,
+    "direct_tls_downloads": 134,
+    "verified_existing_local_hardlinks": 29,
+    "new_unique_download_file_bytes": 2812235230,
+    "hardlinked_file_bytes": 203704421,
+    "response_tables_downloaded_in_this_stage": 0,
+    "trace_tables_downloaded_in_this_stage": 0,
+    "missing_benchmarks": 0,
+    "pending_benchmarks": 0,
+    "all_remote_digests_verified_in_receipt": true,
+    "reconstruction": "No item reconstruction is recorded: completed item files were directly downloaded or existing bytes were hardlinked after remote-digest verification.",
+    "local_table_path_pattern": "data/{benchmark}/items.parquet",
+    "remote_table_path_pattern": "{benchmark}/formatted_tables/items.parquet",
+    "item_file_map_sha256": "356bc39b632af8612c973b1b7663eeff4d7339a2f167fdceed0466d3ebd9dbfc",
+    "item_file_map_definition": "For each benchmark sorted lexically: {path: benchmark/items.parquet, source_path: recorded public source path, bytes: recorded bytes, sha256: recorded digest}. UTF-8 JSON, sorted keys, compact comma/colon separators, Unicode unescaped."
+  },
+  "independently_checked_record_joins": {
+    "status": "PASS",
+    "unique_item_records": 163,
+    "item_record_set_equals_manifest_eligible_set": true,
+    "item_record_set_equals_public_eligibility_set": true,
+    "all_four_records_use_same_public_revision": true,
+    "download_receipt_source_inventory_sha256_matches": true,
+    "download_receipt_eligibility_sha256_matches": true,
+    "all_item_source_paths_equal_fixed_pattern": true,
+    "all_item_source_urls_equal_fixed_pattern": true,
+    "all_raw_required_table_paths_verified": 163,
+    "remote_response_spelling_counts": {"responses": 163},
+    "all_item_byte_counts_and_sha256_match_public_inventory": true,
+    "all_item_sha256_and_byte_counts_match_independent_audit": true,
+    "recorded_required_tables_integrity": "489/489 PASS",
+    "combined_required_local_table_count": 652,
+    "combined_required_local_table_bytes": 5080479573,
+    "current_source_table_byte_rehash_by_this_review": "UNRUN"
+  },
+  "organizer_preparation_contract": {
+    "status": "PUBLIC_SOURCE_AND_PATH_MAPPING_KNOWN",
+    "fixed_revision_required": true,
+    "remote_required_table_paths": [
+      "{benchmark}/formatted_tables/benchmarks.parquet",
+      "{benchmark}/formatted_tables/subjects.parquet",
+      "{benchmark}/formatted_tables/responses.parquet",
+      "{benchmark}/formatted_tables/items.parquet"
+    ],
+    "response_spelling_rule": "Use the response or responses spelling actually present in the pinned public inventory; normalize the local filename to response.parquet.",
+    "local_required_table_paths": [
+      "data/{benchmark}/benchmarks.parquet",
+      "data/{benchmark}/subjects.parquet",
+      "data/{benchmark}/response.parquet",
+      "data/{benchmark}/items.parquet"
+    ],
+    "item_content_rule": "Read the public content column and alias it to item_content at inference-table loading. This does not rewrite or reconstruct the item parquet file.",
+    "current_release_preparation": "OFFLINE_FROM_EXISTING_PUBLIC_TABLES; copy or link only hash-validated resident inputs into the release data root.",
+    "remote_retrieval_recipe": "For organizer-authorized retrieval, use the dataset repository, exact revision and recorded public filename; the standard dataset download API uses repo_type=dataset and revision set to the fixed digest. Flatten formatted_tables into the local benchmark directory according to the path mapping above.",
+    "access_qualification": "The historical receipt records that some unauthenticated requests were refused and an existing authorized dataset session was used. Credentials are not part of the release. Current anonymous access or organizer account access has not been tested.",
+    "current_remote_access": "UNMEASURED",
+    "new_downloads": "UNRUN"
+  },
+  "original_official_preparation_source": {
+    "source_sha256": "1e266976de1aa620c8b747795b520a820a85fc0ab885336483b46dcd1f896da0",
+    "matching_resident_anchor_copy": true,
+    "source_table_types": ["benchmarks", "subjects", "items", "response", "traces"],
+    "verified_public_baseline_origin": "https://github.com/aims-foundations/paiec_baseline.git",
+    "baseline_origin_config_sha256": "ad654a9a85d57e424e1659fe32fe3685a9e38e919b6aa172deb32e3b1b923b8d",
+    "baseline_origin_privacy": "Only the public remote endpoint is retained; user information, query parameters and fragments are omitted.",
+    "qualification": "The original official preparation helper resolves the current main revision afresh, can fetch traces and embeddings, and preserves remote directory structure. Invoking it unchanged would not be the frozen offline release-preparation contract. The exact fixed revision and local flattening above must remain explicit.",
+    "lines": [36, 54, 70, 75, 89, 127]
+  },
+  "evidence": {
+    "original_required_table_manifest": {"sha256": "16b56d2164a98e6df9483ccfba1c27f753eeb850f8b3fb9d78be2bac1b50c076", "bytes": 27419},
+    "public_full_table_inventory": {"sha256": "f8731c9b2eace07fe66e0d514d5eee7ef2a0e36f62cf9bcca23953796e29bfc2", "bytes": 410207},
+    "public_eligibility_inventory": {"sha256": "abf0a5a0cdf57423cf0fe45c5b828132158bf8e660cac6d5b05a6d459b99624a", "bytes": 452597},
+    "item_preparation_receipt": {"sha256": "c70cabe314a763bd373db6d24c71b7aaf6536eec9fc0976f28aa2d737bec9eb5", "bytes": 410128},
+    "item_digest_inventory": {"sha256": "d47a68596592a17654027b9b19bf6da2f540b793415ec09df5526225f246a100", "bytes": 43017},
+    "required_table_integrity_receipt": {"sha256": "7b09329e088a819026b6a8f74645e8fe96f0f613009ebdf434ef524a02f04c5f", "bytes": 184107},
+    "independent_table_audit": {"sha256": "f7225f4b2057213e9e5eafcc629bc8c09a05ee9dbed6465dc9eb1226e416ca39", "bytes": 132959},
+    "official_preparation_source": {"sha256": "1e266976de1aa620c8b747795b520a820a85fc0ab885336483b46dcd1f896da0", "bytes": 8896},
+    "item_table_loading_source": {"sha256": "a2ed788351ff1029a72f3d4bfe6adc7a41b97b9c6c10c050a12cd705d4bb8248", "lines": [194, 202]}
+  },
+  "limitations": [
+    "This review verifies agreement of existing resident records; fresh offline input byte validation must precede release preparation.",
+    "The exact historical item downloader implementation is not separately source-hash-bound in the reviewed receipt. Its public endpoints, pinned revision, per-file sizes and remote digests are recorded and agree independently.",
+    "Current remote accessibility is unmeasured because this review made no network request."
+  ],
+  "privacy": "Only neutral evidence roles, public source URLs, relative data paths and hashes are retained."
+}

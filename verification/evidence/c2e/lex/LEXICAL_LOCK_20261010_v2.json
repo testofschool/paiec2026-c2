@@ -1,0 +1,283 @@
+{
+  "status": "LOCKED_BEFORE_RESULTS",
+  "locked_at_kst": "2026-10-10T17:23:36.678128+09:00",
+  "actual_lexical_outcomes_observed_at_lock": false,
+  "amendment_source_path": "$PAIEC_SOURCE_ROOT/c2e/lex/AUTHOR_AMENDMENT_FULLTEXT_20261010.md",
+  "amendment_source_sha256": "9f89456555903fd73e5a4251cf9bae1570f9fa7feb09e26949e1edf368a0442f",
+  "original_spec_path": "$PAIEC_SOURCE_ROOT/c2e/AUTHOR_SPEC.md",
+  "original_spec_sha256": "fddbb8fa1f989f374b206120eeefe18fe8f733243e09130145903480d1c1e515",
+  "details_preregistration_path": "$PAIEC_SOURCE_ROOT/c2e/lex/LEXICAL_DETAILS_PREREGISTRATION_20261010.json",
+  "details_preregistration_sha256": "a7c16db8e9bae041d904e85655b73707b56b8dfb46ca1ec0c4a676a38e77cb39",
+  "definition": {
+    "name": "C2E-lex",
+    "encoder": "Unicode character 3-5-gram TF-IDF L2 cosine",
+    "item_text_field": "item_content",
+    "preprocessing": [
+      "C2.clean missing-value handling and outer strip",
+      "str.lower",
+      "collapse Unicode whitespace with ' '.join(text.split())"
+    ],
+    "text_truncation": "NONE; full visible text; BGE 512-token limit does not apply",
+    "ngrams": [
+      3,
+      4,
+      5
+    ],
+    "ngram_boundaries": "overlapping literal Unicode characters; no padding or boundary tokens",
+    "term_frequency": "raw overlapping occurrence count; no sublinear scaling",
+    "idf": "log((1+N)/(1+df))+1; natural log; smooth IDF",
+    "df": "one count per visible document containing a gram",
+    "normalization": "L2 on current-call TF-IDF values",
+    "zero_vector_cosine": 0.0,
+    "visible_corpus": "target item plus revealed labeled items in target benchmark only",
+    "visible_document_key": [
+      "frozen._s(benchmark_id)",
+      "C2.clean(item_content)",
+      "C2.clean(item_features)"
+    ],
+    "interactors": "ignored, matching unchanged C2 item identity",
+    "repeated_label_documents": "same benchmark+C2 item key deduplicated",
+    "normalized_text_duplicates": "different semantic C2 keys remain separate documents",
+    "target_document": "added once iff semantic key not already in revealed corpus",
+    "idf_refit_scope": "fresh call-visible corpus; unseen target DF increment is temporary",
+    "other_benchmarks_and_future_targets": "never enter IDF fitting",
+    "neighbor_count": "unchanged top-10, fewer if R has fewer",
+    "exact_similarity_tie_rule": "unchanged stable revealed-label sequence order",
+    "cache_scope": "one immutable benchmark revealed corpus; query identity includes exact semantic key and normalized text",
+    "cache_limits": {
+      "normalized_texts": 2048,
+      "gram_count_texts": 2048,
+      "prepared_queries": 1024,
+      "pair_cosines": 500000
+    },
+    "install_requests": 0,
+    "model_download_requests": 0,
+    "network_requests": 0
+  },
+  "grid": [
+    [
+      0.05,
+      1,
+      0.5
+    ],
+    [
+      0.05,
+      1,
+      1
+    ],
+    [
+      0.05,
+      1,
+      2
+    ],
+    [
+      0.05,
+      1,
+      4
+    ],
+    [
+      0.05,
+      3,
+      0.5
+    ],
+    [
+      0.05,
+      3,
+      1
+    ],
+    [
+      0.05,
+      3,
+      2
+    ],
+    [
+      0.05,
+      3,
+      4
+    ],
+    [
+      0.05,
+      10,
+      0.5
+    ],
+    [
+      0.05,
+      10,
+      1
+    ],
+    [
+      0.05,
+      10,
+      2
+    ],
+    [
+      0.05,
+      10,
+      4
+    ],
+    [
+      0.1,
+      1,
+      0.5
+    ],
+    [
+      0.1,
+      1,
+      1
+    ],
+    [
+      0.1,
+      1,
+      2
+    ],
+    [
+      0.1,
+      1,
+      4
+    ],
+    [
+      0.1,
+      3,
+      0.5
+    ],
+    [
+      0.1,
+      3,
+      1
+    ],
+    [
+      0.1,
+      3,
+      2
+    ],
+    [
+      0.1,
+      3,
+      4
+    ],
+    [
+      0.1,
+      10,
+      0.5
+    ],
+    [
+      0.1,
+      10,
+      1
+    ],
+    [
+      0.1,
+      10,
+      2
+    ],
+    [
+      0.1,
+      10,
+      4
+    ],
+    [
+      0.2,
+      1,
+      0.5
+    ],
+    [
+      0.2,
+      1,
+      1
+    ],
+    [
+      0.2,
+      1,
+      2
+    ],
+    [
+      0.2,
+      1,
+      4
+    ],
+    [
+      0.2,
+      3,
+      0.5
+    ],
+    [
+      0.2,
+      3,
+      1
+    ],
+    [
+      0.2,
+      3,
+      2
+    ],
+    [
+      0.2,
+      3,
+      4
+    ],
+    [
+      0.2,
+      10,
+      0.5
+    ],
+    [
+      0.2,
+      10,
+      1
+    ],
+    [
+      0.2,
+      10,
+      2
+    ],
+    [
+      0.2,
+      10,
+      4
+    ]
+  ],
+  "implementations": {
+    "run_lex.py": "fca7ac0ca715279d0891c594dee46e4eaa4df29bf97ea3892299ba9c1722f3ac",
+    "evaluate_grid.py": "ce65f1d520b64fceaaecae4e246758d305f46c88f1da0af96293f33bfecebc1e",
+    "nested_priors.py": "4a7c1b32f25a5cd0fb02a84eeb5c0b07f7b585aacc4a026d7d4d8e44f9f2682b",
+    "model.py": "4950478490ae48590450ce13286e5799d9b0e9b5d175332826ff475653092361",
+    "residual_core.py": "72f59844564cf87c68e4099c170ddc3a4a56114c45b52c17504bfe53d349ec1e",
+    "visible_tfidf_core.py": "858f34b7479be358c6c7ab709500c80445fc25669ef198f49854d678b3fe1508",
+    "similarity_factory.py": "5738396024a5264a315deccfea340d10a2d083177d80f9d5658eb3c69f5b22e6",
+    "run_fixture.py": "2ef1c2258c99d95d8ac0b80b8b0d5425d0c48f53a81ca45d3c7806771c0768d2",
+    "analyze_gates.py": "5fabc1a55c6a6549e7c37d493b0fbed6e3af093d658c0f1ef682d754f2cb0caf",
+    "baseline_identity.py": "4e8f1ecc1b051a4940f06b1165404e209d578045415f793decc93af3fad2b484",
+    "offline.sb": "725444aa8a76d45e56e09c8f20c50c066cf39a7e2932bcb1de0cc2fe47b1a16c",
+    "launch_lex.py": "1e5f8a33c959bf546bb35d86ba4a32422dbd32aea81a73eb18e533d839c40842",
+    "LEXICAL_DETAILS_PREREGISTRATION_20261010.json": "a7c16db8e9bae041d904e85655b73707b56b8dfb46ca1ec0c4a676a38e77cb39"
+  },
+  "similarity_factory_path": "$PAIEC_SOURCE_ROOT/c2e/lex/similarity_factory.py",
+  "similarity_factory_sha256": "5738396024a5264a315deccfea340d10a2d083177d80f9d5658eb3c69f5b22e6",
+  "baseline_bindings_path": "$PAIEC_SOURCE_ROOT/c2e/lex/baseline_bindings.json",
+  "baseline_bindings_sha256": "ac98d1184cd6483bc00ad10f36364a34cfe91c7e4b8ded6aac866d9d7a42236f",
+  "baseline_identity_path": "$PAIEC_SOURCE_ROOT/c2e/lex/baseline_identity_run_20261010/result.json",
+  "baseline_identity_sha256": "442edab7de4f76c5f2c9eb3d78d333461a70e95946ec148294b7d583d67d8aff",
+  "gate_criteria": {
+    "1": "95% benchmark-cluster CI lower bound>0;2000 reps;seed0",
+    "2": "raw pair-equal ALC<=0.1749",
+    "3": "strict ALC wins>=5/6 folds",
+    "4": "max deployed B0 prediction difference<=1e-12",
+    "5": {
+      "seconds_max": 1800,
+      "rss_bytes_max": 8000000000,
+      "targets": 2000,
+      "labels": 62000,
+      "evidence_configurations": 2000,
+      "transformed_instances": 64000
+    }
+  },
+  "environment": "retained release fresh venv, requirements.lock; c2b0/.venv prohibited",
+  "network_requests": 0,
+  "installs": 0,
+  "model_downloads": 0,
+  "report_deadline_kst": "2026-10-16T23:59:00+09:00",
+  "stop_deadline_kst": "2026-10-20T23:59:00+09:00",
+  "supersedes_lock_path": "$PAIEC_SOURCE_ROOT/c2e/lex/LEXICAL_LOCK_20261010.json",
+  "supersedes_lock_sha256": "69a3ab40b8b2ab817de20aa29302302ab2a8306aff082011a88982f366c4b464",
+  "before_outcome_revision": "Independent audit found launcher content reads without explicit dataless guard. Added guard; no model, TF-IDF, grid, evaluation, input or gate changes; no real lexical outcomes existed."
+}

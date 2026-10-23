@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-10T05:00:02.633095+00:00",
+  "status": "HOLD",
+  "source_review_status": "PASS_STATIC",
+  "scope": {
+    "review_mode": "Read-only static source and resident-byte verification; no target code execution",
+    "sources": [
+      "src/prepare_data.py",
+      "src/build_zip.py",
+      "src/check_official.py",
+      "src/resident_files.py",
+      "verification/archive_payload_manifest.json",
+      "verification/public_input_manifest.json"
+    ],
+    "official_execution": "UNRUN",
+    "data_preparation": "UNRUN",
+    "archive_reproduction": "UNRUN",
+    "scientific_computation": "UNRUN",
+    "full_release_scrub": "UNRUN"
+  },
+  "source_files": {
+    "src/prepare_data.py": {
+      "sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+      "size_bytes": 3977
+    },
+    "src/build_zip.py": {
+      "sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+      "size_bytes": 2593
+    },
+    "src/check_official.py": {
+      "sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+      "size_bytes": 1528
+    },
+    "src/resident_files.py": {
+      "sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+      "size_bytes": 1633
+    },
+    "verification/archive_payload_manifest.json": {
+      "sha256": "f4a89cd195b5b2b1537930fdf588e1a572d981389d0b13fd737f125750c524f5",
+      "size_bytes": 803
+    },
+    "verification/public_input_manifest.json": {
+      "sha256": "09d46c62efb511713af315e167322492d599cd768a72aa9baa7c6ab7dca75eba",
+      "size_bytes": 124965
+    }
+  },
+  "external_checker_source_bindings": {
+    "checker_source": {
+      "sha256": "abe3cae05f4b18450b36edca60faef8a39bdf21821f30ff195c3cc45e177c646",
+      "size_bytes": 27121
+    },
+    "checker_helper": {
+      "sha256": "c6f2610f9c8b6cad8a2338ddc07a0cb25d40bca761a6628937a2cee2705a6267",
+      "size_bytes": 10666
+    }
+  },
+  "environment_provenance": {
+    "path": "verification/environment_provenance.json",
+    "sha256": "1d288e62b894fb0bcb4c38b819b7bb13549c2b696c21934e876e39f012cf6fc5",
+    "change": "Clarified compression constructor level and unspecified explicit member level; no environment or numerical claims changed"
+  },
+  "resolved_findings": [
+    {
+      "id": "ancestor_residency_guard",
+      "status": "RESOLVED",
+      "evidence": "Shared helper performs lexical root-to-leaf lstat and rejects an offloaded ancestor before descending; symlink targets are checked with a bounded redirect count. Data, archive, and checker paths use this helper."
+    },
+    {
+      "id": "archive_manifest_binding",
+      "status": "RESOLVED",
+      "evidence": "Builder pins archival manifest bytes before parsing, verifies each member digest, and requires the registered final archive digest before publishing the external output."
+    },
+    {
+      "id": "checker_bytecode_isolation",
+      "status": "RESOLVED",
+      "evidence": "Checker child uses a fresh temporary bytecode-cache prefix, disables bytecode writes, receives -B, and removes inherited module-path and interpreter-home overrides. Both external source files are hash-pinned."
+    }
+  ],
+  "static_checks": {
+    "input_mapping": {
+      "status": "PASS_STATIC",
+      "prepared": "<benchmark>/<table>.parquet",
+      "raw_public": "<benchmark>/formatted_tables/<table>.parquet",
+      "response_aliases": [
+        "response.parquet",
+        "responses.parquet"
+      ],
+      "admission": "All selected files must match exact manifest size and SHA before output creation; copied destinations are checked again."
+    },
+    "offline_data_preparation": {
+      "status": "PASS_STATIC",
+      "evidence": "Preparation imports only local file/standard-library facilities and has no download or network operation."
+    },
+    "output_separation": {
+      "status": "PASS_STATIC",
+      "evidence": "Data copy and ZIP outputs require fresh destinations outside the release source tree; data output also cannot descend from the original input root."
+    },
+    "archive_serialization": {
+      "status": "PASS_STATIC",
+      "member_order": "Sorted member names",
+      "timestamp": "1980-01-01 00:00:00",
+      "mode_octal": "0644",
+      "compression": "DEFLATE",
+      "compression_constructor_level": 9,
+      "zipinfo_member_level": "unspecified; preserve original writer block semantics",
+      "qualification": "Explicit member entries retain the observed historical writer call pattern. Exact registered ZIP reproduction is guarded by its digest but has not been executed in this review."
+    },
+    "external_checker": {
+      "status": "PASS_STATIC",
+      "evidence": "External checker and helper remain outside the release; both current resident source digests equal the fixed constants. The wrapper invokes the supplied checker with the running interpreter and exits with its code."
+    }
+  },
+  "known_hold_findings": [
+    {
+      "id": "archival_public_identifier_policy_conflict",
+      "status": "HOLD_PENDING_HUMAN_DECISION",
+      "path": "src/archive_payload/prior.json",
+      "sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+      "size_bytes": 4356734,
+      "observed_casefold_occurrences": 2911,
+      "qualification": "Existing public model identifiers in the exact archival payload conflict with the unconditional forbidden-token policy. The payload remains unchanged. An explicit policy exception or continued HOLD requires the already pending human decision; this review does not grant an exception. The count covers one verified token in this member and is not a full-release scrub result."
+    }
+  ],
+  "preservation": {
+    "root_scripts_modified": false,
+    "payload_modified": false,
+    "registered_prior_sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+    "registered_zip_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+    "numerical_method_changed": false
+  },
+  "limitations": [
+    "Static source inspection does not prove successful copying, registered ZIP byte reproduction, checker runtime success, or evaluation reproducibility.",
+    "The historical environment provenance limitation remains BLOCKED; this receipt supplies no substitute version lock."
+  ]
+}

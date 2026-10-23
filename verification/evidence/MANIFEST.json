@@ -1,0 +1,259 @@
+{
+  "schema_version": 1,
+  "source_policy": "Read-only originals; source roots replaced only in release copies. Relocated CSVs resolved from the existing report directory, without fabricating c2e originals.",
+  "files": [
+    {
+      "requested_path": "c2d2/summary.json",
+      "source_path": "$PAIEC_SOURCE_ROOT/c2d2/summary.json",
+      "destination_path": "verification/evidence/c2d2/summary.json",
+      "status": "copied",
+      "original": {
+        "sha256": "ecb34114800c2bfd197633e91a122fbdf6010a10b44b197a4757d34ab3343cdc",
+        "bytes": 215347
+      },
+      "destination": {
+        "sha256": "68c3773c96ff48b4ba50c3c74e5f1c5cdc84f9eb39b0ba77acc5590d271c3c68",
+        "bytes": 211927
+      },
+      "replacement_count": 45,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 45
+      },
+      "original_scan": {
+        "status": "FAIL",
+        "hits": 90,
+        "patterns": {
+          "P001": 45,
+          "P004": 45
+        }
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      },
+      "historical_registered_reference_sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+      "source_matches_historical_registered_reference": false,
+      "qualification": "The read-only available source is a later 2026-10-13 snapshot; its original hash differs from the historical 2026-10-10 registration reference. The three split2 metrics match frozen expected values exactly; no metric drift is inferred."
+    },
+    {
+      "requested_path": "c2d2/test_c2.py",
+      "source_path": "$PAIEC_SOURCE_ROOT/c2d2/test_c2.py",
+      "destination_path": "verification/evidence/c2d2/test_c2.py",
+      "status": "copied",
+      "original": {
+        "sha256": "1ed8d74438ae4aa851593493bd4c2fef144714dc02ed1924c4d3590b1afb26a0",
+        "bytes": 11080
+      },
+      "destination": {
+        "sha256": "1ed8d74438ae4aa851593493bd4c2fef144714dc02ed1924c4d3590b1afb26a0",
+        "bytes": 11080
+      },
+      "replacement_count": 0,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 0
+      },
+      "original_scan": {
+        "status": "PASS",
+        "hits": 0,
+        "patterns": {}
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      }
+    },
+    {
+      "requested_path": "headroom/REPORT.md",
+      "source_path": "$PAIEC_SOURCE_ROOT/headroom/REPORT.md",
+      "destination_path": "verification/evidence/headroom/REPORT.md",
+      "status": "copied",
+      "original": {
+        "sha256": "6cfe2652aba74e847b43a22737c15a66cd31d10d20430fa3c6f8ac077e765c10",
+        "bytes": 241183
+      },
+      "destination": {
+        "sha256": "467389e3efce84710ee13864094c9c8409ed1bf768d20ec3015802dd9d64fb1d",
+        "bytes": 228337
+      },
+      "replacement_count": 282,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 282
+      },
+      "original_scan": {
+        "status": "FAIL",
+        "hits": 846,
+        "patterns": {
+          "P001": 282,
+          "P004": 282,
+          "P005": 282
+        }
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      }
+    },
+    {
+      "requested_path": "c2b0/REPORT.md",
+      "source_path": "$PAIEC_SOURCE_ROOT/c2b0/REPORT.md",
+      "destination_path": "verification/evidence/c2b0/REPORT.md",
+      "status": "copied",
+      "original": {
+        "sha256": "cd2986617574a74a42a8de2183dd2485ed54991dd168f299717d791a6eb1951c",
+        "bytes": 9010
+      },
+      "destination": {
+        "sha256": "cd2986617574a74a42a8de2183dd2485ed54991dd168f299717d791a6eb1951c",
+        "bytes": 9010
+      },
+      "replacement_count": 0,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 0
+      },
+      "original_scan": {
+        "status": "PASS",
+        "hits": 0,
+        "patterns": {}
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      }
+    },
+    {
+      "requested_path": "c2e/lex/LEXICAL_LOCK_20261010_v2.json",
+      "source_path": "$PAIEC_SOURCE_ROOT/c2e/lex/LEXICAL_LOCK_20261010_v2.json",
+      "destination_path": "verification/evidence/c2e/lex/LEXICAL_LOCK_20261010_v2.json",
+      "status": "copied",
+      "original": {
+        "sha256": "358db922413afafd16477e52216238a14d123504d6fbc0f5216d7d6728d81e0c",
+        "bytes": 7512
+      },
+      "destination": {
+        "sha256": "e277469698a4c770b491fd8fc7e0c00d627789687c8035cb5be280395910fbad",
+        "bytes": 7190
+      },
+      "replacement_count": 7,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 7
+      },
+      "original_scan": {
+        "status": "FAIL",
+        "hits": 21,
+        "patterns": {
+          "P001": 7,
+          "P004": 7,
+          "P005": 7
+        }
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      }
+    },
+    {
+      "requested_path": "c2e/lex/outer_pair_deltas.csv",
+      "source_path": "$PAIEC_SOURCE_ROOT/report/outer_pair_deltas.csv",
+      "destination_path": "verification/evidence/c2e/lex/outer_pair_deltas.csv",
+      "status": "copied",
+      "original": {
+        "sha256": "5f648bac558b683c5606c975597e32e2b05736dd1ac2d918cacf5f25f7b092d5",
+        "bytes": 245676
+      },
+      "destination": {
+        "sha256": "40320f2b1dc2ca5583788371fc84457ef6bf3e99a5bde395a880541361b18720",
+        "bytes": 209864
+      },
+      "replacement_count": 1279,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 1279
+      },
+      "original_scan": {
+        "status": "FAIL",
+        "hits": 3837,
+        "patterns": {
+          "P001": 1279,
+          "P004": 1279,
+          "P005": 1279
+        }
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      },
+      "data_rows": 1279,
+      "columns": [
+        "benchmark",
+        "subject_id",
+        "C2_alc",
+        "C2E_alc",
+        "delta",
+        "source"
+      ]
+    },
+    {
+      "requested_path": "c2e/lex/outer_partial.csv",
+      "source_path": "$PAIEC_SOURCE_ROOT/report/outer_partial.csv",
+      "destination_path": "verification/evidence/c2e/lex/outer_partial.csv",
+      "status": "copied",
+      "original": {
+        "sha256": "b14b1ac60d3404cb55c497e0c27510610e5938eca75c2b6aaf2a2c20ce1560dc",
+        "bytes": 1985
+      },
+      "destination": {
+        "sha256": "69013d35812c6ccd11ac24f3a716fb4cef15265b53e337b81947d429ecabb8bd",
+        "bytes": 1733
+      },
+      "replacement_count": 9,
+      "replacements": {
+        "absolute_source_root_to_PAIEC_SOURCE_ROOT": 9
+      },
+      "original_scan": {
+        "status": "FAIL",
+        "hits": 27,
+        "patterns": {
+          "P001": 9,
+          "P004": 9,
+          "P005": 9
+        }
+      },
+      "destination_scan": {
+        "status": "PASS",
+        "hits": 0
+      },
+      "data_rows": 9,
+      "columns": [
+        "benchmark",
+        "pairs",
+        "delta",
+        "below_noise",
+        "source",
+        "csv_sha256"
+      ]
+    }
+  ],
+  "copied_count": 7,
+  "absent": [],
+  "outer_N": 9,
+  "outer_N_semantics": "9 data rows in an earlier retained report snapshot; not a measured STOP count or a count of bound COMPLETE receipts.",
+  "receipt_confirmed_outer_N": null,
+  "outer_snapshot_qualification": "The requested CSV basenames are absent from c2e/lex in the source tree. Existing report/outer_partial.csv and report/outer_pair_deltas.csv contain the nine-benchmark snapshot and were copied with explicit source resolution, without claiming STOP completeness.",
+  "supplementary": [
+    {
+      "path": "verification/evidence/archive_payload/frozen_model.py",
+      "source_archive": "dist/C2_r1.zip",
+      "source_archive_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "source_member": "frozen_model.py",
+      "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "bytes": 7275,
+      "same_as": "src/irt_shrink/model.py",
+      "byte_equal_to_source_predictor": true,
+      "replacement_count": 0,
+      "scrub": {
+        "status": "PASS",
+        "hits": 0
+      },
+      "purpose": "Expose the immutable bundled predictor as an inspectable evidence copy for the report citation; source and ZIP remain unchanged."
+    }
+  ]
+}

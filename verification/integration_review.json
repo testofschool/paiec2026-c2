@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "status": "PASS_STATIC",
+  "scope": "Independent source comparison and isolated standard-library receipt tests only",
+  "scientific_execution": "UNRUN",
+  "numerical_reproduction": "UNRUN",
+  "numerical_module_imports": 0,
+  "release_readiness": "HOLD",
+  "reviewed_source_sha256": {
+    "src/build_zip.py": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+    "src/c2/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/c2/model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "src/check_official.py": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+    "src/corehelpers/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/corehelpers/evaluation.py": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+    "src/corehelpers/io.py": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+    "src/corehelpers/measure.py": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+    "src/corehelpers/protocol.py": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+    "src/corehelpers/split3.py": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+    "src/evaluate.py": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+    "src/irt_shrink/__init__.py": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+    "src/irt_shrink/model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "src/irt_shrink/train_prior.py": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+    "src/prepare_data.py": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+    "src/resident_files.py": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+    "src/train.py": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622"
+  },
+  "original_reference_sha256": {
+    "c2/model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "irt_shrink/model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "irt_shrink/train_prior.py": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+    "irt_shrink/lobo_eval.py": "3f29cd9b1f2a3034f42867c8f3eebb291325c9597c92d2e3ce1294b03549e197",
+    "headroom/measure.py": "a2ed788351ff1029a72f3d4bfe6adc7a41b97b9c6c10c050a12cd705d4bb8248",
+    "c2d2/prepare.py": "9307ff1b1cd5393d15ad6413dd30370d1ea9f9976b90e367f62fd04868634154",
+    "c2d2/evaluate.py": "e58ea02c8b494db458e3403b7ae8a899bc99d5fdbf8e28c3dccb94cb028c71ce",
+    "c2b0/run.py": "795cf31b7b0d3cdaa969a9ba3444be3596ee702e26c9cd2551a3e5f5f4b67fca"
+  },
+  "exact_copied_symbols": [
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "BUDGETS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 18,
+      "original_line": 28
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "WEIGHTS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 20,
+      "original_line": 29
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "SUBJECT_FIELDS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 22,
+      "original_line": 30
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "ITEM_FIELDS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 25,
+      "original_line": 32
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "sha",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 28,
+      "original_line": 35
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "clean",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 36,
+      "original_line": 43
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "read_bench",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 40,
+      "original_line": 47
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_prior_stats",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 65,
+      "original_line": 72
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "prepare",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 112,
+      "original_line": 119
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "fit_irt",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 151,
+      "original_line": 158
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "brier",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 183,
+      "original_line": 190
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "item_table",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 187,
+      "original_line": 194
+    },
+    {
+      "released_path": "src/corehelpers/measure.py",
+      "original_path": "headroom/measure.py",
+      "symbol": "atomic_text",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 201,
+      "original_line": 302
+    },
+    {
+      "released_path": "src/corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "split_seed",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 14,
+      "original_line": 33
+    },
+    {
+      "released_path": "src/corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "partition_cells",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 18,
+      "original_line": 37
+    },
+    {
+      "released_path": "src/corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "candidate_probabilities",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 36,
+      "original_line": 55
+    },
+    {
+      "released_path": "src/corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "simulate_benchmark",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 72,
+      "original_line": 91
+    },
+    {
+      "released_path": "src/corehelpers/evaluation.py",
+      "original_path": "c2d2/evaluate.py",
+      "symbol": "validate_frame",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 151,
+      "original_line": 191
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "BUDGETS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 4,
+      "original_line": 37
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "WEIGHTS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 6,
+      "original_line": 38
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "MIN_ITEMS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 8,
+      "original_line": 39
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "N_FOLDS",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 10,
+      "original_line": 40
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "_h",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 13,
+      "original_line": 43
+    },
+    {
+      "released_path": "src/corehelpers/protocol.py",
+      "original_path": "irt_shrink/lobo_eval.py",
+      "symbol": "fold_of",
+      "status": "PASS",
+      "check": "exact_source_and_ast",
+      "released_line": 17,
+      "original_line": 47
+    }
+  ],
+  "exact_model_source_checks": [
+    {
+      "released_path": "src/c2/model.py",
+      "original_path": "c2/model.py",
+      "status": "PASS",
+      "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8"
+    },
+    {
+      "released_path": "src/irt_shrink/model.py",
+      "original_path": "irt_shrink/model.py",
+      "status": "PASS",
+      "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6"
+    },
+    {
+      "released_path": "src/irt_shrink/train_prior.py",
+      "original_path": "irt_shrink/train_prior.py",
+      "status": "PASS",
+      "sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322"
+    }
+  ],
+  "additional_equation_checks": [
+    {
+      "check": "fixed_training_options",
+      "status": "PASS"
+    },
+    {
+      "check": "target_and_1PL_8_statements",
+      "status": "PASS"
+    },
+    {
+      "check": "outer_and_public_item_weighted_variance_pooling",
+      "status": "PASS"
+    },
+    {
+      "check": "split3_seed_rhs",
+      "status": "PASS"
+    }
+  ],
+  "integration_findings": [
+    {
+      "check": "actual_refit",
+      "status": "PASS_STATIC",
+      "evidence": [
+        "src/train.py:90",
+        "src/train.py:96",
+        "src/train.py:99",
+        "src/train.py:101",
+        "src/corehelpers/measure.py:141"
+      ],
+      "detail": "Fresh output receives training from current public raw data; archived prior payload is not read by training or evaluation."
+    },
+    {
+      "check": "outer_fold_exclusion",
+      "status": "PASS_STATIC",
+      "evidence": [
+        "src/corehelpers/measure.py:141",
+        "src/train.py:66",
+        "src/evaluate.py:25"
+      ],
+      "detail": "Six frozen priors and C2 variances exclude each held benchmark fold; finite nonconverged variance fits remain in the registered item-weighted pool."
+    },
+    {
+      "check": "split_separation",
+      "status": "PASS_STATIC",
+      "evidence": [
+        "src/evaluate.py:17",
+        "src/evaluate.py:64",
+        "src/corehelpers/split3.py:4"
+      ],
+      "detail": "Only seed changes between the two registered splits. Priors, variance configurations, eligible raw-pair population, cells and scores use the same original functions."
+    },
+    {
+      "check": "response_and_acquisition_semantics",
+      "status": "PASS_STATIC",
+      "evidence": [
+        "src/corehelpers/measure.py:53",
+        "src/corehelpers/evaluation.py:18",
+        "src/corehelpers/evaluation.py:119"
+      ],
+      "detail": "All binary trials determine evaluation Brier. Revealed labels use earliest recorded trial. Raw subject IDs, stable ordering, exact half split and shared benchmark RNG consumption are preserved."
+    },
+    {
+      "check": "results_schema_and_population",
+      "status": "PASS_STATIC",
+      "evidence": [
+        "src/corehelpers/io.py:7",
+        "src/evaluate.py:49",
+        "src/evaluate.py:55",
+        "src/evaluate.py:112"
+      ],
+      "detail": "COMPLETE requires 145 eligible benchmarks and 13023 unique raw subject/benchmark pairs. Registered metrics are unweighted pair means; split2 supplies C2_ALC, frozen_ALC and C2_B0; split3 supplies C2_ALC, C2_B0 and C2_B31."
+    },
+    {
+      "check": "training_artifact_origin",
+      "status": "PASS_STATIC_AFTER_FIX",
+      "evidence": [
+        "src/evaluate.py:67",
+        "src/evaluate.py:107",
+        "src/evaluate.py:122"
+      ],
+      "detail": "Evaluation requires a COMPLETE training receipt bound to exact current input/source maps, registered coverage and all prepared/fold digests. Receipt hash is included in final artifact integrity verification. A source revision requires fresh training."
+    }
+  ],
+  "revision": {
+    "reason": "Close standalone artifact-origin provenance gap without changing numerical sources or functions",
+    "modified_files": [
+      "src/evaluate.py",
+      "src/source_manifest.json"
+    ],
+    "evaluate_old_sha256": "5839afe51dd82e2807afb87e48c634a97d5ac3d238620ead0a071048170f8785",
+    "evaluate_new_sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+    "source_manifest_old_sha256": "20e44175be56654a746a4d9cf89408803a084281b205585caf5c727db9cf890e",
+    "source_manifest_new_sha256": "555f778566467e4469e0b9b4e0422dd2fd11115f74b393cf0959564594379a0f",
+    "model_and_helper_bytes_unchanged": true
+  },
+  "synthetic_checks": {
+    "status": "PASS",
+    "cases": 16,
+    "items": [
+      {
+        "case": "complete_current_training_receipt",
+        "status": "PASS"
+      },
+      {
+        "case": "uncompleted_receipt",
+        "status": "PASS"
+      },
+      {
+        "case": "wrong_schema",
+        "status": "PASS"
+      },
+      {
+        "case": "missing_coverage",
+        "status": "PASS"
+      },
+      {
+        "case": "wrong_inventory_coverage",
+        "status": "PASS"
+      },
+      {
+        "case": "wrong_pair_coverage",
+        "status": "PASS"
+      },
+      {
+        "case": "changed_raw_input",
+        "status": "PASS"
+      },
+      {
+        "case": "obsolete_evaluation_source",
+        "status": "PASS"
+      },
+      {
+        "case": "missing_complete_source",
+        "status": "PASS"
+      },
+      {
+        "case": "missing_artifact_digest",
+        "status": "PASS"
+      },
+      {
+        "case": "changed_artifact_digest",
+        "status": "PASS"
+      },
+      {
+        "case": "invalid_output_map",
+        "status": "PASS"
+      },
+      {
+        "case": "missing_receipt",
+        "status": "PASS"
+      },
+      {
+        "case": "actual_artifact_change",
+        "status": "PASS"
+      },
+      {
+        "case": "receipt_required_before_output_and_in_final_integrity_check",
+        "status": "PASS"
+      },
+      {
+        "case": "all_release_python_syntax",
+        "status": "PASS"
+      }
+    ],
+    "method": "Compile only isolated receipt function AST with standard-library stubs; parse source syntax and inspect control flow. No statistical imports or fit/simulation calls."
+  },
+  "limitations": [
+    "Source preservation and receipt behavior do not establish recomputed numerical results.",
+    "Historical dependency provenance and release-policy questions remain outside this review."
+  ]
+}

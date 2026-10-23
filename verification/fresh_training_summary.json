@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "reviewed_at_utc": "2026-10-10T05:22:26.604519+00:00",
+  "scope": "Fresh training prerequisite evidence only; evaluation and archive checks are separate stages",
+  "training_producer_status": "COMPLETE",
+  "process_exit_code": 0,
+  "training_runs": 1,
+  "coverage": {
+    "inventory_benchmarks": 163,
+    "benchmarks": 145,
+    "pairs": 13023
+  },
+  "fit_summary": {
+    "fit_count": 163,
+    "fit_successes": 160,
+    "finite_nonconverged_fits": 3,
+    "response_covered_items": 3679304,
+    "all_numeric_fit_fields_finite": true,
+    "all_fits_retained": true,
+    "retention_policy": "Keep the original finite fits at the fixed 500-iteration limit; no convergence filtering or sensitivity replacement",
+    "nonconverged_fits": [
+      {
+        "bench": "babilong",
+        "fold": 3,
+        "items": 526202,
+        "offset_sum_squares": 241270.06394270324,
+        "variance": 0.45851225183998395,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 500,
+        "objective": 1022091.5829798887,
+        "gradient_max": 59.48387678112149,
+        "intercept": -0.012219800211024949,
+        "wall_seconds": 78.28448316687718
+      },
+      {
+        "bench": "bridging_gap",
+        "fold": 3,
+        "items": 132418,
+        "offset_sum_squares": 150082.64991931553,
+        "variance": 1.133400669994378,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 500,
+        "objective": 2455463.590646684,
+        "gradient_max": 502.71420111656107,
+        "intercept": 0.23790926464089074,
+        "wall_seconds": 76.12986599979922
+      },
+      {
+        "bench": "monkey_power_laws",
+        "fold": 0,
+        "items": 525,
+        "offset_sum_squares": 12901.244101287844,
+        "variance": 24.57379828816732,
+        "success": false,
+        "message": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT",
+        "iterations": 500,
+        "objective": 4037239.2163707432,
+        "gradient_max": 40.59350191152467,
+        "intercept": -2.490668800162316,
+        "wall_seconds": 13.082165291998535
+      }
+    ]
+  },
+  "observed_training_command": {
+    "argv": "./scripts/train_prior.sh",
+    "started_at_kst": "2026-10-10T14:08:46.625354+09:00",
+    "status": "PASS",
+    "exit_code": 0,
+    "ended_observed_at_kst": "2026-10-10T14:19:38.859582+09:00",
+    "observed_elapsed_seconds": 652.234228,
+    "timing_qualification": "Start-to-observed-exit interval; includes polling observation lag",
+    "training_receipt_sha256": "68dc379e59e9ec1f4e9a4edfc0c9b869accd79692208b100673c49c543350dfe"
+  },
+  "runtime": {
+    "status": "PASS",
+    "runtime": {
+      "python": "3.10.11",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "scipy": "1.15.3"
+    },
+    "fresh_virtual_environment": true,
+    "include_system_site_packages": false
+  },
+  "evidence_sources": {
+    "runtime": {
+      "sha256": "a513ec9fd4323a081887c7b62df9c148fdf91399ea5b693a4b7a927798be6590",
+      "size_bytes": 238
+    },
+    "data_copy": {
+      "sha256": "ab7d81297fa4697033c08dd4ec69f5bd958f2646fbb8d4d76d822d20878f2dbf",
+      "size_bytes": 279
+    },
+    "training": {
+      "sha256": "68dc379e59e9ec1f4e9a4edfc0c9b869accd79692208b100673c49c543350dfe",
+      "size_bytes": 71863
+    },
+    "prepare_summary": {
+      "sha256": "2da23e746dd89bb43db45cec6f37c80d3af9188a01d75833bc7e6950996518c8",
+      "size_bytes": 72662
+    },
+    "observed_state": {
+      "sha256": "ce64dfb379fef4b215ba5eef87b798b28ef8b59e1b620d4b642f4b0d37644904",
+      "size_bytes": 2280
+    },
+    "copy_snapshot": {
+      "sha256": "69d78113ae50fd00010f520ff17b86af6481fb6de1f1125f24e149a553d8fa9f",
+      "size_bytes": 8538
+    }
+  },
+  "copied_receipts": {
+    "runtime": {
+      "path": "verification/fresh_runtime.json",
+      "sha256": "a513ec9fd4323a081887c7b62df9c148fdf91399ea5b693a4b7a927798be6590",
+      "copy_mode": "BYTE_EXACT"
+    },
+    "offline_data": {
+      "path": "verification/offline_data_receipt.json",
+      "sha256": "ab7d81297fa4697033c08dd4ec69f5bd958f2646fbb8d4d76d822d20878f2dbf",
+      "copy_mode": "BYTE_EXACT"
+    },
+    "training": {
+      "path": "verification/training_receipt.json",
+      "sha256": "68dc379e59e9ec1f4e9a4edfc0c9b869accd79692208b100673c49c543350dfe",
+      "copy_mode": "BYTE_EXACT"
+    }
+  },
+  "hash_bindings": {
+    "public_input_manifest_sha256": "09d46c62efb511713af315e167322492d599cd768a72aa9baa7c6ab7dca75eba",
+    "input_files": 652,
+    "input_hash_map_vs_pinned_manifest": "PASS_EXACT",
+    "source_files": 17,
+    "source_current_bytes_and_fresh_copy_snapshot": "PASS_EXACT",
+    "artifact_files": 19,
+    "artifact_current_bytes": "PASS_EXACT",
+    "artifact_checks": [
+      {
+        "path": "fold_0_config.json",
+        "sha256": "8a71b95920621afaab5907f12078fc36ffadda8e5bf3d97f2c9503e49a89f515",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_1_config.json",
+        "sha256": "729166fb44278b2e7dbdd8c5baa2ae5ceb895a2a571f9fa48921a0eb03c5accd",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_2_config.json",
+        "sha256": "8219c6f1b944cb78d51131710df0302e3e58fe66bcea1e133d1c5b5bbd99d191",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_3_config.json",
+        "sha256": "1f8c8bd53a929b231614e06ddc5df438cbeff81c886c1f0d6df0bfc4507edcfc",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_4_config.json",
+        "sha256": "b4c32298d11affb576cb5732f7348b4765a1fddc926e6fc28df9c027b601b881",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_5_config.json",
+        "sha256": "e82f2d688c4ccff8e97b7f06916f8123cfea7890dd0925f005b8bebd3afb9281",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_0.json",
+        "sha256": "2606f1c20ce98cc6817c936d84ee8a543d0702caca606534dfc238596455c65b",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_1.json",
+        "sha256": "dddc95a481ddf6bbd78bc6df9ac36309a069712e1780ebe38efdaf59b00d1a3b",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_2.json",
+        "sha256": "a8ad23dfdfe5bd53676c2449e147bb166276590f0363176614533bc50e4b33ea",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_3.json",
+        "sha256": "59b7177fa961d7267fa4572a5416e7dd4c2acb7bac6fcec2265092e02c3cdd9b",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_4.json",
+        "sha256": "c2a5ee61fcbeb5b898a56e71d058b308f376f7d1ab4ee269583397cc27d4b680",
+        "status": "PASS"
+      },
+      {
+        "path": "fold_prior_5.json",
+        "sha256": "e9a4b5c14adf641021c408b49e9ed4e0f2a7a4fe36165948f0c4aa999a9cec44",
+        "status": "PASS"
+      },
+      {
+        "path": "inputs_after.json",
+        "sha256": "4a2e3ac7968da90f1aab8d1204ef7969fe60352a60ed3c179c60ed5a3b4f315f",
+        "status": "PASS"
+      },
+      {
+        "path": "inputs_before.json",
+        "sha256": "4a2e3ac7968da90f1aab8d1204ef7969fe60352a60ed3c179c60ed5a3b4f315f",
+        "status": "PASS"
+      },
+      {
+        "path": "prepare_summary.json",
+        "sha256": "2da23e746dd89bb43db45cec6f37c80d3af9188a01d75833bc7e6950996518c8",
+        "status": "PASS"
+      },
+      {
+        "path": "prepared.json",
+        "sha256": "7cde926a78a79affc8b6b6d6cc3c7edf9cf51caa24efc00fba5a3943cb66e831",
+        "status": "PASS"
+      },
+      {
+        "path": "prior.json",
+        "sha256": "7aab4224ad6fa89dc13d6483e302bce7906212633a2a3e71a4224f12a5ebe237",
+        "status": "PASS"
+      },
+      {
+        "path": "prior_base.json",
+        "sha256": "da80ffa663bd10ac0009e6a5195ed7c11ed2d4fd071f8418ccdf66b35e7ab0b1",
+        "status": "PASS"
+      },
+      {
+        "path": "public_config.json",
+        "sha256": "7065a5f8a6a4c80d2990143abcab8112092256d149de786c811e6b57d31abf30",
+        "status": "PASS"
+      }
+    ],
+    "prepare_summary_sha256": "2da23e746dd89bb43db45cec6f37c80d3af9188a01d75833bc7e6950996518c8"
+  },
+  "fixed_training_options": {
+    "outcomes": "all recorded binary trials",
+    "target": "log((k+1)/(n-k+1)), equal-item benchmark centering",
+    "theta_prior_variance": 4.0,
+    "theta_prior_mean": "log((k+1)/(n-k+1))",
+    "item_prior_variance": 1.0,
+    "intercept_prior_mean": 0.0,
+    "intercept_prior_variance": 4.0,
+    "two_parameter": false,
+    "optimizer": "L-BFGS-B",
+    "maxiter": 500,
+    "ftol": 1e-09,
+    "gtol": 1e-05,
+    "maxcor": 10,
+    "sigma_pooling": "centered sum squares / item count",
+    "sigma_floor": 1e-08
+  },
+  "scrub_safety": {
+    "status": "PASS",
+    "raw_tables_copied": false,
+    "raw_identifiers_copied": false,
+    "scientific_prior_payloads_copied": false,
+    "csv_parquet_or_log_payloads_copied": false,
+    "private_pattern_and_credential_prefix_checks": "PASS",
+    "qualification": "Copied receipts contain public relative file names, digests, versions, counters, and fixed settings. Training artifacts were streamed only to verify digests; their contents were not copied or emitted."
+  },
+  "preservation": {
+    "external_evidence_modified": false,
+    "fresh_scientific_source_or_run_modified": false,
+    "live_scientific_source_lock_or_expected_values_modified": false,
+    "scientific_execution_by_this_review": "NONE"
+  }
+}

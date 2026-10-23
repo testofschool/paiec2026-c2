@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "exit_code": 0,
+  "command": "./scripts/official_checker.sh",
+  "checker_mode": "full default; no static-only flag",
+  "checker_sha256": "abe3cae05f4b18450b36edca60faef8a39bdf21821f30ff195c3cc45e177c646",
+  "helper_sha256": "c6f2610f9c8b6cad8a2338ddc07a0cb25d40bca761a6628937a2cee2705a6267",
+  "archive_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+  "raw_log_sha256": "a2635350fdb9a377f68bd37f5fe841805a5a1f2380b7fe10a7f8ebc01f94c71b",
+  "published_log_sha256": "855fd6df56763baef973c6b47dc602702ad163e1d66f43e22bb32f8a58b667fa",
+  "log_path_normalization": "Only generated temporary archive path replaced by documented environment variable",
+  "stage_timing": {
+    "phase": "official_checker",
+    "argv": "./scripts/official_checker.sh",
+    "started_at_kst": "2026-10-10T14:29:02.073528+09:00",
+    "status": "PASS",
+    "log": "official_checker.log",
+    "ended_at_kst": "2026-10-10T14:29:02.835882+09:00",
+    "wall_seconds": 0.7611449593678117,
+    "exit_code": 0
+  },
+  "prediction_smoke_test": "EXECUTED_PASS",
+  "optional_acquisition_hook": "SKIPPED_NO_LABELING_MODULE",
+  "qualification": "The full default checker skips optional acquisition when labeling.py is absent; acquisition execution is not claimed"
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "status": "AUTHOR_APPROVED_SCOPE_CORRECTIONS",
+  "approval_date": "2026-10-10",
+  "release_target": "C2",
+  "scope": "Two explicit policy corrections only; registered numerical expectations, tolerance and exact artifact hashes are unchanged.",
+  "scrub_policy": {
+    "status": "AUTHOR_APPROVED",
+    "reason": "These names occur in preserved public model identifiers in the frozen prior.",
+    "original_prior_bytes_unchanged": true,
+    "shipped_prior_path": "src/archive_payload/prior.json",
+    "shipped_prior_sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+    "original_registered_zip_bytes_unchanged": true,
+    "registered_revision_zip_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+    "readme_disclosure_required": true,
+    "readme_disclosure_scope": "Disclose that the two removed blacklist names remain within public model identifiers in the shipped frozen prior, and that prior and registered ZIP bytes are preserved without redaction.",
+    "other_forbidden_patterns_unchanged": true,
+    "author_name_allowlist_unchanged": true,
+    "credentials_and_private_identifiers_still_forbidden": true,
+    "readme_verification": "UNRUN",
+    "final_scrub_verification": "UNRUN",
+    "removed_forbidden_patterns": [
+      {
+        "pattern_id": "P006",
+        "codepoints": [
+          67,
+          108,
+          97,
+          117,
+          100,
+          101
+        ]
+      },
+      {
+        "pattern_id": "P007",
+        "codepoints": [
+          67,
+          111,
+          100,
+          101,
+          120
+        ]
+      }
+    ],
+    "readme_disclosure_reference": {
+      "path": "README.md",
+      "requirement": "One explicit author-mandated disclosure line; no additional outside-prior name occurrences are authorized.",
+      "verification": "UNRUN"
+    }
+  },
+  "reproduction_environment": {
+    "status": "APPROVED_REPRODUCTION_LOCK",
+    "versions": {
+      "implementation": "CPython",
+      "python": "3.10.11",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "scipy": "1.15.3"
+    },
+    "controls": {
+      "applies_to": [
+        "split2",
+        "split3"
+      ],
+      "single_environment_only": true,
+      "second_environment_allowed": false,
+      "absolute_metric_tolerance": 1e-06,
+      "on_absolute_metric_difference_above_tolerance": "STOP",
+      "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "registered_values_changed": false,
+      "registered_hashes_changed": false
+    },
+    "exact_historical_producer_provenance": "UNVERIFIABLE",
+    "historical_split3_recorded_versions": {
+      "python": "3.12.14",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "scipy": "1.18.1"
+    },
+    "qualification": "The approved environment is a common reproduction target. The distinct historical split3 record is preserved and is not relabeled as having used this lock.",
+    "installation": "UNRUN",
+    "split2_execution": "UNRUN",
+    "split3_execution": "UNRUN"
+  },
+  "unchanged_registration": {
+    "expected_values_path": "verification/expected_values.json",
+    "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+    "release_start_path": "verification/release_start.json",
+    "release_start_sha256": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+    "absolute_metric_tolerance": 1e-06,
+    "hash_comparison": "exact"
+  },
+  "environment_provenance_sha256": "51cfa28aac3ef495b426697e7e229c8897a631d22ab50780f0c1c9325377571a",
+  "actions_performed": {
+    "json_records_updated": 2,
+    "dependency_imports": 0,
+    "installations": 0,
+    "numerical_executions": 0,
+    "network_requests": 0,
+    "original_artifact_edits": 0
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "registered_at_kst": "2026-10-10T13:40:53.491716+09:00",
+  "tolerance": 1e-06,
+  "hash_tolerance": "exact",
+  "split2": {
+    "C2_ALC": 0.18487910654403214,
+    "frozen_ALC": 0.2015333932758017,
+    "C2_B0": 0.24893649649887992
+  },
+  "split3": {
+    "C2_ALC": 0.1848401766,
+    "C2_B0": 0.2488973551,
+    "C2_B31": 0.1468372469
+  },
+  "package_sha256": {
+    "model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "frozen_model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "C2_r1.zip": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d"
+  },
+  "reference": {
+    "path": "c2d2/summary.json",
+    "sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+    "json_paths": {
+      "C2_ALC": [
+        "methods",
+        "C2",
+        "alc"
+      ],
+      "frozen_ALC": [
+        "methods",
+        "frozen",
+        "alc"
+      ],
+      "C2_B0": [
+        "methods",
+        "C2",
+        "brier",
+        "0"
+      ]
+    },
+    "values_origin": "Existing frozen summary, before any release rerun"
+  },
+  "author_correction": "스펙의 split2 기대값이 5자리 반올림값으로 잘못 기재됨(스펙 작성자 오기) → 동결 summary.json 원시값으로 정정, 2026-10-10 저자 승인"
+}

@@ -1,0 +1,775 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-10-10T05:31:04.136760+00:00",
+  "checked_at_kst": "2026-10-10T14:31:04.136982+09:00",
+  "status": "PASS",
+  "scope": "Post-run byte integrity of named protected originals, immutable release inputs, and registered executable/script/lock paths; no scientific execution",
+  "protected_original_anchor": {
+    "path": "verification/protected_integrity.json",
+    "sha256": "cbd681681d1d4660da47d553872fe0a6c140483f172028fcf0b63c52e9eeabbc",
+    "checked_at_kst": "2026-10-10T13:59:43.187627+09:00"
+  },
+  "protected_originals": {
+    "c2/model.py": {
+      "expected_sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "expected_size_bytes": 11717,
+      "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "size_bytes": 11717,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    },
+    "irt_shrink/model.py": {
+      "expected_sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "expected_size_bytes": 7275,
+      "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "size_bytes": 7275,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    },
+    "c2d2/provisional_packages/C2_r1.zip": {
+      "expected_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "expected_size_bytes": 386770,
+      "sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "size_bytes": 386770,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    },
+    "c2d2/summary.json": {
+      "expected_sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+      "expected_size_bytes": 197683,
+      "sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+      "size_bytes": 197683,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    },
+    "c2b0/DESIGN.md": {
+      "expected_sha256": "fad14aff19c1797f10120696f042e0d895eeff9903e8f5a520caee044f5b8a1e",
+      "expected_size_bytes": 3293,
+      "sha256": "fad14aff19c1797f10120696f042e0d895eeff9903e8f5a520caee044f5b8a1e",
+      "size_bytes": 3293,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    },
+    "c2b0/prior.json": {
+      "expected_sha256": "a6d4d375f713408dc60ef966de92bfe8bd6d0941d70f713c3516b24ad589a443",
+      "expected_size_bytes": 4727163,
+      "sha256": "a6d4d375f713408dc60ef966de92bfe8bd6d0941d70f713c3516b24ad589a443",
+      "size_bytes": 4727163,
+      "resident_ancestry": "PASS",
+      "stable_during_read": true,
+      "status": "PASS"
+    }
+  },
+  "immutable_release_inputs": {
+    "verification/expected_values.json": {
+      "live_release": {
+        "expected_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+        "sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+        "size_bytes": 1326,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+        "sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+        "size_bytes": 1326,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      }
+    },
+    "src/archive_payload/prior.json": {
+      "live_release": {
+        "expected_sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+        "sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+        "size_bytes": 4356734,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+        "sha256": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+        "size_bytes": 4356734,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      }
+    }
+  },
+  "fresh_source_snapshot": {
+    "path": "verification/fresh_copy_snapshot.json",
+    "sha256": "69d78113ae50fd00010f520ff17b86af6481fb6de1f1125f24e149a553d8fa9f",
+    "external_snapshot_byte_identity": "PASS",
+    "registered_executable_or_lock_paths": 28,
+    "qualification": "Only the explicit registered Python, shell, and lock paths are compared. Mutable documentation and later verification receipts are outside this source comparison."
+  },
+  "live_and_tested_fresh_source_comparison": {
+    "requirements.lock": {
+      "snapshot_sha256": "189c35a0d8be6a25aab409b838926af9334d5bfef7594d5c9fa36737fb0d63e9",
+      "snapshot_size_bytes": 368,
+      "live_release": {
+        "expected_sha256": "189c35a0d8be6a25aab409b838926af9334d5bfef7594d5c9fa36737fb0d63e9",
+        "expected_size_bytes": 368,
+        "sha256": "189c35a0d8be6a25aab409b838926af9334d5bfef7594d5c9fa36737fb0d63e9",
+        "size_bytes": 368,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "189c35a0d8be6a25aab409b838926af9334d5bfef7594d5c9fa36737fb0d63e9",
+        "expected_size_bytes": 368,
+        "sha256": "189c35a0d8be6a25aab409b838926af9334d5bfef7594d5c9fa36737fb0d63e9",
+        "size_bytes": 368,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "verification/scrub_scan.py": {
+      "snapshot_sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+      "snapshot_size_bytes": 17683,
+      "live_release": {
+        "expected_sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+        "expected_size_bytes": 17683,
+        "sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+        "size_bytes": 17683,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+        "expected_size_bytes": 17683,
+        "sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+        "size_bytes": 17683,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "verification/compare_expected.py": {
+      "snapshot_sha256": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+      "snapshot_size_bytes": 17869,
+      "live_release": {
+        "expected_sha256": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+        "expected_size_bytes": 17869,
+        "sha256": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+        "size_bytes": 17869,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+        "expected_size_bytes": 17869,
+        "sha256": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+        "size_bytes": 17869,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "verification/verify_identifier_sources.py": {
+      "snapshot_sha256": "065f3ff8a445f38683a1ec1683d7e83cc15b78c0e395cf5266cd172317a8f174",
+      "snapshot_size_bytes": 10476,
+      "live_release": {
+        "expected_sha256": "065f3ff8a445f38683a1ec1683d7e83cc15b78c0e395cf5266cd172317a8f174",
+        "expected_size_bytes": 10476,
+        "sha256": "065f3ff8a445f38683a1ec1683d7e83cc15b78c0e395cf5266cd172317a8f174",
+        "size_bytes": 10476,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "065f3ff8a445f38683a1ec1683d7e83cc15b78c0e395cf5266cd172317a8f174",
+        "expected_size_bytes": 10476,
+        "sha256": "065f3ff8a445f38683a1ec1683d7e83cc15b78c0e395cf5266cd172317a8f174",
+        "size_bytes": 10476,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/train_prior.sh": {
+      "snapshot_sha256": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+      "snapshot_size_bytes": 151,
+      "live_release": {
+        "expected_sha256": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+        "expected_size_bytes": 151,
+        "sha256": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+        "size_bytes": 151,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+        "expected_size_bytes": 151,
+        "sha256": "a702a9fc8053b5b3ab6b7fbd235df1c8e9cb02b226d61d14ee5dca302a4be707",
+        "size_bytes": 151,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/evaluate_split2.sh": {
+      "snapshot_sha256": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+      "snapshot_size_bytes": 210,
+      "live_release": {
+        "expected_sha256": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+        "expected_size_bytes": 210,
+        "sha256": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+        "size_bytes": 210,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+        "expected_size_bytes": 210,
+        "sha256": "08b1942f6da643d64fc06c3ecca6bcceaa8b02f8496478a05edd4af67b29ac85",
+        "size_bytes": 210,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/evaluate_split3.sh": {
+      "snapshot_sha256": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+      "snapshot_size_bytes": 210,
+      "live_release": {
+        "expected_sha256": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+        "expected_size_bytes": 210,
+        "sha256": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+        "size_bytes": 210,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+        "expected_size_bytes": 210,
+        "sha256": "1eb5ca9a5da0b2fd7ab119ccdb31e128102c55d4d507735d8ac516ba4e8a7176",
+        "size_bytes": 210,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/prepare_data.sh": {
+      "snapshot_sha256": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+      "snapshot_size_bytes": 220,
+      "live_release": {
+        "expected_sha256": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+        "expected_size_bytes": 220,
+        "sha256": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+        "size_bytes": 220,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+        "expected_size_bytes": 220,
+        "sha256": "59f7d851b063d9ea604f510552ed1e2c5a92e88c8d831f375f40f999f9e8dd5d",
+        "size_bytes": 220,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/official_checker.sh": {
+      "snapshot_sha256": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+      "snapshot_size_bytes": 256,
+      "live_release": {
+        "expected_sha256": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+        "expected_size_bytes": 256,
+        "sha256": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+        "size_bytes": 256,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+        "expected_size_bytes": 256,
+        "sha256": "7cb62105099370846bcd8d8743436f1368b6d67521b084b9fafd022adf033025",
+        "size_bytes": 256,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/build_zip.sh": {
+      "snapshot_sha256": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+      "snapshot_size_bytes": 131,
+      "live_release": {
+        "expected_sha256": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+        "expected_size_bytes": 131,
+        "sha256": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+        "size_bytes": 131,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+        "expected_size_bytes": 131,
+        "sha256": "af7ef4ab1e59df8d28a8adad42035d433f3c6ba360f80391f1e31865af8ad03d",
+        "size_bytes": 131,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "scripts/_common.sh": {
+      "snapshot_sha256": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+      "snapshot_size_bytes": 413,
+      "live_release": {
+        "expected_sha256": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+        "expected_size_bytes": 413,
+        "sha256": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+        "size_bytes": 413,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+        "expected_size_bytes": 413,
+        "sha256": "a5b78f17276c66d8c8b77e13ab7c92b79c12e52e76504ae3d9a5b543c0df3486",
+        "size_bytes": 413,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/prepare_data.py": {
+      "snapshot_sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+      "snapshot_size_bytes": 3977,
+      "live_release": {
+        "expected_sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+        "expected_size_bytes": 3977,
+        "sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+        "size_bytes": 3977,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+        "expected_size_bytes": 3977,
+        "sha256": "42733a2b0a3450e3e9d3252752da69e8790dabd7f0ceff25dd6b63d88f40bc42",
+        "size_bytes": 3977,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/check_official.py": {
+      "snapshot_sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+      "snapshot_size_bytes": 1528,
+      "live_release": {
+        "expected_sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+        "expected_size_bytes": 1528,
+        "sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+        "size_bytes": 1528,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+        "expected_size_bytes": 1528,
+        "sha256": "67b96d0862cc2f8d352b5b9e8e4a7e6fc51a8460eec34c704902ee79e4417a54",
+        "size_bytes": 1528,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/build_zip.py": {
+      "snapshot_sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+      "snapshot_size_bytes": 2593,
+      "live_release": {
+        "expected_sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+        "expected_size_bytes": 2593,
+        "sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+        "size_bytes": 2593,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+        "expected_size_bytes": 2593,
+        "sha256": "d6941dc4f93733747e2bbc93d19fe5b1f15db71a9232a0d31163c73ec6776613",
+        "size_bytes": 2593,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/resident_files.py": {
+      "snapshot_sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+      "snapshot_size_bytes": 1633,
+      "live_release": {
+        "expected_sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+        "expected_size_bytes": 1633,
+        "sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+        "size_bytes": 1633,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+        "expected_size_bytes": 1633,
+        "sha256": "6063788832c8164c821963b8defd34957becd848aa5a52d35b2b68b088be3ad5",
+        "size_bytes": 1633,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/train.py": {
+      "snapshot_sha256": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+      "snapshot_size_bytes": 6418,
+      "live_release": {
+        "expected_sha256": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+        "expected_size_bytes": 6418,
+        "sha256": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+        "size_bytes": 6418,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+        "expected_size_bytes": 6418,
+        "sha256": "882355181802192656ee902d9324c1c79cda5330ae63f10484ce750c3fb17622",
+        "size_bytes": 6418,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/evaluate.py": {
+      "snapshot_sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+      "snapshot_size_bytes": 6885,
+      "live_release": {
+        "expected_sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+        "expected_size_bytes": 6885,
+        "sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+        "size_bytes": 6885,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+        "expected_size_bytes": 6885,
+        "sha256": "3eec74a22d550b2ccdc25bd2fa97de36a0df55974f263d7e5923511f10e56f70",
+        "size_bytes": 6885,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/measure.py": {
+      "snapshot_sha256": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+      "snapshot_size_bytes": 9717,
+      "live_release": {
+        "expected_sha256": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+        "expected_size_bytes": 9717,
+        "sha256": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+        "size_bytes": 9717,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+        "expected_size_bytes": 9717,
+        "sha256": "0cfc9bb8076746697e96daed7833d52ac505b4b351029de650d9e1a2e2248694",
+        "size_bytes": 9717,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/protocol.py": {
+      "snapshot_sha256": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+      "snapshot_size_bytes": 308,
+      "live_release": {
+        "expected_sha256": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+        "expected_size_bytes": 308,
+        "sha256": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+        "size_bytes": 308,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+        "expected_size_bytes": 308,
+        "sha256": "e665df810d118115acfb98e7debdbbc3140191e983823bf46ef05d0acdcf4d1b",
+        "size_bytes": 308,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/evaluation.py": {
+      "snapshot_sha256": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+      "snapshot_size_bytes": 9032,
+      "live_release": {
+        "expected_sha256": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+        "expected_size_bytes": 9032,
+        "sha256": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+        "size_bytes": 9032,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+        "expected_size_bytes": 9032,
+        "sha256": "9cc9a87a993a47781f0de82c339820e712d8f1922c751b2574afdb553b1cab2a",
+        "size_bytes": 9032,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/io.py": {
+      "snapshot_sha256": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+      "snapshot_size_bytes": 3476,
+      "live_release": {
+        "expected_sha256": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+        "expected_size_bytes": 3476,
+        "sha256": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+        "size_bytes": 3476,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+        "expected_size_bytes": 3476,
+        "sha256": "f95f91a95ce5a6bf7966106b6417726d00200a89f654b4d44fc5460cef50c172",
+        "size_bytes": 3476,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/__init__.py": {
+      "snapshot_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+      "snapshot_size_bytes": 35,
+      "live_release": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/corehelpers/split3.py": {
+      "snapshot_sha256": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+      "snapshot_size_bytes": 145,
+      "live_release": {
+        "expected_sha256": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+        "expected_size_bytes": 145,
+        "sha256": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+        "size_bytes": 145,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+        "expected_size_bytes": 145,
+        "sha256": "6f27be76e9266bb4e6baf979eb31f1675a1dcc5fc26f98f093ec36c61e3124a0",
+        "size_bytes": 145,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/irt_shrink/__init__.py": {
+      "snapshot_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+      "snapshot_size_bytes": 35,
+      "live_release": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/irt_shrink/model.py": {
+      "snapshot_sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "snapshot_size_bytes": 7275,
+      "live_release": {
+        "expected_sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+        "expected_size_bytes": 7275,
+        "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+        "size_bytes": 7275,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+        "expected_size_bytes": 7275,
+        "sha256": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+        "size_bytes": 7275,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/irt_shrink/train_prior.py": {
+      "snapshot_sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+      "snapshot_size_bytes": 6489,
+      "live_release": {
+        "expected_sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+        "expected_size_bytes": 6489,
+        "sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+        "size_bytes": 6489,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+        "expected_size_bytes": 6489,
+        "sha256": "6403fc88dc879aaaa32eab883f31655c69bc392a3f82f4b7daec6bb68f2c9322",
+        "size_bytes": 6489,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/c2/__init__.py": {
+      "snapshot_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+      "snapshot_size_bytes": 35,
+      "live_release": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "expected_size_bytes": 35,
+        "sha256": "bc625fa33c75b0506bc408af31591edd614b0b5f927605b05318069b4fbc245b",
+        "size_bytes": 35,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    },
+    "src/c2/model.py": {
+      "snapshot_sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "snapshot_size_bytes": 11717,
+      "live_release": {
+        "expected_sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+        "expected_size_bytes": 11717,
+        "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+        "size_bytes": 11717,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "tested_fresh_copy": {
+        "expected_sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+        "expected_size_bytes": 11717,
+        "sha256": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+        "size_bytes": 11717,
+        "resident_ancestry": "PASS",
+        "stable_during_read": true,
+        "status": "PASS"
+      },
+      "status": "PASS"
+    }
+  },
+  "failures": [],
+  "summary": {
+    "protected_originals_checked": 6,
+    "protected_originals_passed": 6,
+    "immutable_release_input_copies_checked": 4,
+    "registered_executable_or_lock_paths_checked": 28,
+    "registered_executable_or_lock_paths_passed": 28
+  },
+  "preservation": {
+    "original_files_modified": false,
+    "fresh_scientific_sources_modified": false,
+    "network_or_restoration_requests": 0,
+    "numerical_runs": 0,
+    "tests_run": 0,
+    "protected_model_or_data_payloads_copied": false
+  }
+}

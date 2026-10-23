@@ -1,0 +1,147 @@
+{
+  "phase": "scientific_sequence_complete",
+  "status": "PASS_ALL_SCIENTIFIC_STAGES",
+  "started_at_kst": "2026-10-10T14:06:38.397250+09:00",
+  "one_installation_attempt": 1,
+  "counts": {
+    "numeric_release_reruns": 3,
+    "installation_sessions": 1,
+    "fresh_copy_tests": 1,
+    "built_archives": 1,
+    "official_checker_runs": 1,
+    "prior_training_runs": 1,
+    "evaluate_split2_runs": 1,
+    "evaluate_split3_runs": 1
+  },
+  "commands": [
+    {
+      "cwd": "fresh repository",
+      "argv": "python3.10 -m venv \"$PAIEC_RUN_DIR/venv\"",
+      "exit_code": 0
+    },
+    {
+      "cwd": "fresh repository",
+      "argv": "\"$PAIEC_PYTHON\" -m pip --disable-pip-version-check install --only-binary=:all: -r requirements.lock",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "argv": "./scripts/prepare_data.sh \"$PAIEC_PUBLIC_DATA_DIR\"",
+      "started_at_kst": "2026-10-10T14:07:39.681551+09:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "wall_seconds": 19.810293374583125
+    },
+    {
+      "argv": "\"$PAIEC_PYTHON\" -B verification/verify_identifier_sources.py --data \"$PAIEC_RUN_DIR/data\" --out \"$PAIEC_RUN_DIR/identifier_sources.json\"",
+      "started_at_kst": "2026-10-10T14:08:21.919819+09:00",
+      "status": "PASS",
+      "exit_code": 0
+    },
+    {
+      "argv": "./scripts/train_prior.sh",
+      "started_at_kst": "2026-10-10T14:08:46.625354+09:00",
+      "status": "PASS",
+      "exit_code": 0,
+      "ended_observed_at_kst": "2026-10-10T14:19:38.859582+09:00",
+      "observed_elapsed_seconds": 652.234228,
+      "timing_qualification": "Start-to-observed-exit interval; includes polling observation lag",
+      "training_receipt_sha256": "68dc379e59e9ec1f4e9a4edfc0c9b869accd79692208b100673c49c543350dfe"
+    },
+    {
+      "phase": "evaluate_split2",
+      "argv": "./scripts/evaluate_split2.sh",
+      "started_at_kst": "2026-10-10T14:19:38.926690+09:00",
+      "status": "PASS",
+      "log": "evaluate_split2.log",
+      "ended_at_kst": "2026-10-10T14:24:05.853218+09:00",
+      "wall_seconds": 266.92500645900145,
+      "exit_code": 0
+    },
+    {
+      "phase": "compare_split2",
+      "argv": "\"$PAIEC_PYTHON\" -B verification/compare_expected.py --split split2 --metrics-only --results \"$PAIEC_RUN_DIR\"/eval_split2/results.json --json-output \"$PAIEC_RUN_DIR\"/compare_split2.json --text-output \"$PAIEC_RUN_DIR\"/compare_split2.txt",
+      "started_at_kst": "2026-10-10T14:24:10.486657+09:00",
+      "status": "PASS",
+      "ended_at_kst": "2026-10-10T14:24:10.528008+09:00",
+      "wall_seconds": 0.040899042040109634,
+      "exit_code": 0
+    },
+    {
+      "phase": "evaluate_split3",
+      "argv": "./scripts/evaluate_split3.sh",
+      "started_at_kst": "2026-10-10T14:24:18.876184+09:00",
+      "status": "PASS",
+      "log": "evaluate_split3.log",
+      "ended_at_kst": "2026-10-10T14:28:48.373661+09:00",
+      "wall_seconds": 269.4959771670401,
+      "exit_code": 0
+    },
+    {
+      "phase": "compare_split3",
+      "argv": "\"$PAIEC_PYTHON\" -B verification/compare_expected.py --split split3 --metrics-only --results \"$PAIEC_RUN_DIR\"/eval_split3/results.json --json-output \"$PAIEC_RUN_DIR\"/compare_split3.json --text-output \"$PAIEC_RUN_DIR\"/compare_split3.txt",
+      "started_at_kst": "2026-10-10T14:28:51.470208+09:00",
+      "status": "PASS",
+      "ended_at_kst": "2026-10-10T14:28:51.518080+09:00",
+      "wall_seconds": 0.04741662507876754,
+      "exit_code": 0
+    },
+    {
+      "phase": "build_zip",
+      "argv": "./scripts/build_zip.sh",
+      "started_at_kst": "2026-10-10T14:28:58.388241+09:00",
+      "status": "PASS",
+      "log": "build_zip.log",
+      "ended_at_kst": "2026-10-10T14:28:59.099235+09:00",
+      "wall_seconds": 0.7097270409576595,
+      "exit_code": 0
+    },
+    {
+      "phase": "official_checker",
+      "argv": "./scripts/official_checker.sh",
+      "started_at_kst": "2026-10-10T14:29:02.073528+09:00",
+      "status": "PASS",
+      "log": "official_checker.log",
+      "ended_at_kst": "2026-10-10T14:29:02.835882+09:00",
+      "wall_seconds": 0.7611449593678117,
+      "exit_code": 0
+    },
+    {
+      "phase": "compare_final",
+      "argv": "\"$PAIEC_PYTHON\" -B verification/compare_expected.py --results \"$PAIEC_RUN_DIR\"/eval_split2/results.json --results \"$PAIEC_RUN_DIR\"/eval_split3/results.json --zip \"$PAIEC_RUN_DIR\"/dist/C2_r1.zip --json-output \"$PAIEC_RUN_DIR\"/compare_final.json --text-output \"$PAIEC_RUN_DIR\"/compare_final.txt",
+      "started_at_kst": "2026-10-10T14:29:09.937239+09:00",
+      "status": "PASS",
+      "ended_at_kst": "2026-10-10T14:29:09.986882+09:00",
+      "wall_seconds": 0.048953416757285595,
+      "exit_code": 0
+    }
+  ],
+  "installation_completed_observed_at_kst": "2026-10-10T14:07:39.681551+09:00",
+  "runtime": {
+    "status": "PASS",
+    "runtime": {
+      "python": "3.10.11",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "scipy": "1.15.3"
+    },
+    "fresh_virtual_environment": true,
+    "include_system_site_packages": false
+  },
+  "compare_split2": {
+    "PASS": 15,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "compare_split3": {
+    "PASS": 15,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "compare_final": {
+    "PASS": 25,
+    "FAIL": 0,
+    "BLOCKED": 0
+  }
+}

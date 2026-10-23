@@ -1,0 +1,35 @@
+Static source diff; numerical execution UNRUN.
+
+diff c2/model.py src/c2/model.py : PASS; 0 changed lines
+diff irt_shrink/model.py src/irt_shrink/model.py : PASS; 0 changed lines
+diff irt_shrink/train_prior.py src/irt_shrink/train_prior.py : PASS; 0 changed lines
+diff headroom/measure.py src/corehelpers/measure.py : PASS; sha; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; clean; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; read_bench; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; fit_prior_stats; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; prepare; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; fit_irt; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; brier; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; item_table; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; atomic_text; 0 changed lines; AST exact
+diff c2d2/evaluate.py src/corehelpers/evaluation.py : PASS; split_seed; 0 changed lines; AST exact
+diff c2d2/evaluate.py src/corehelpers/evaluation.py : PASS; partition_cells; 0 changed lines; AST exact
+diff c2d2/evaluate.py src/corehelpers/evaluation.py : PASS; candidate_probabilities; 0 changed lines; AST exact
+diff c2d2/evaluate.py src/corehelpers/evaluation.py : PASS; simulate_benchmark; 0 changed lines; AST exact
+diff c2d2/evaluate.py src/corehelpers/evaluation.py : PASS; validate_frame; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; _h; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; fold_of; 0 changed lines; AST exact
+diff c2d2/prepare.py src/train.py : PASS; target_and_1PL_statements; 0 changed lines; AST exact
+diff c2d2/prepare.py src/train.py : PASS; variance_pooling_statements; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; BUDGETS; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; WEIGHTS; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; MIN_ITEMS; 0 changed lines; AST exact
+diff irt_shrink/lobo_eval.py src/corehelpers/protocol.py : PASS; N_FOLDS; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; BUDGETS; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; WEIGHTS; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; SUBJECT_FIELDS; 0 changed lines; AST exact
+diff headroom/measure.py src/corehelpers/measure.py : PASS; ITEM_FIELDS; 0 changed lines; AST exact
+diff c2d2/prepare.py src/train.py : PASS; FIXED_OPTIONS; 0 changed lines; AST exact
+
+Additional seed-block AST comparison and CLI provenance tests: verification/integration_review.json.
+Wrapper additions: CLI/path/output/provenance/coverage/residency handling; original numerical functions and equations preserved.

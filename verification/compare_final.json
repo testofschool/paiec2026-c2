@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "counts": {
+    "PASS": 25,
+    "FAIL": 0,
+    "BLOCKED": 0
+  },
+  "staged_scope": "full_both_splits_and_package",
+  "selected_splits": [
+    "split2",
+    "split3"
+  ],
+  "package_checks": "REQUIRED",
+  "full_acceptance_check": true,
+  "checks": [
+    {
+      "id": "registration.expected_file",
+      "status": "PASS",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "reason": null
+    },
+    {
+      "id": "registration.expected_sha256",
+      "status": "PASS",
+      "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+    },
+    {
+      "id": "registration.start_file",
+      "status": "PASS",
+      "actual": "85d1f7e816c3fcc9d81496c314dc019a0b2309756fb4a709d50061ba6ae357a4",
+      "reason": null
+    },
+    {
+      "id": "registration.start_expected_sha256",
+      "status": "PASS",
+      "expected": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "actual": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+    },
+    {
+      "id": "registration.release_target",
+      "status": "PASS",
+      "expected": "C2",
+      "actual": "C2"
+    },
+    {
+      "id": "registration.release_reruns_before_registration",
+      "status": "PASS",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "id": "registration.tolerance",
+      "status": "PASS",
+      "expected": 1e-06,
+      "actual": 1e-06
+    },
+    {
+      "id": "registration.hash_tolerance",
+      "status": "PASS",
+      "expected": "exact",
+      "actual": "exact"
+    },
+    {
+      "id": "observed.file.0",
+      "status": "PASS",
+      "actual": "0bab18b3b4117844ed5ac6814f7c9a413ed77309e605369849c8062da61f8c83",
+      "reason": null
+    },
+    {
+      "id": "observed.schema_version.0",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "id": "observed.file.1",
+      "status": "PASS",
+      "actual": "1d5c4f029ef325e8221a62d9ad42196b5e350416c78ad72cbffd86049d787790",
+      "reason": null
+    },
+    {
+      "id": "observed.schema_version.1",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "id": "split2.C2_ALC",
+      "status": "PASS",
+      "expected": 0.18487910654403214,
+      "actual": 0.18487910654403214,
+      "absolute_difference": 0.0,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split2.frozen_ALC",
+      "status": "PASS",
+      "expected": 0.2015333932758017,
+      "actual": 0.20153339327580172,
+      "absolute_difference": 2.7755575615628914e-17,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split2.C2_B0",
+      "status": "PASS",
+      "expected": 0.24893649649887992,
+      "actual": 0.24893649649887994,
+      "absolute_difference": 2.7755575615628914e-17,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split2.coverage.benchmarks",
+      "status": "PASS",
+      "expected": 145,
+      "actual": 145,
+      "reason": null
+    },
+    {
+      "id": "split2.coverage.pairs",
+      "status": "PASS",
+      "expected": 13023,
+      "actual": 13023,
+      "reason": null
+    },
+    {
+      "id": "split3.C2_ALC",
+      "status": "PASS",
+      "expected": 0.1848401766,
+      "actual": 0.18484017662654537,
+      "absolute_difference": 2.6545377007636262e-11,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split3.C2_B0",
+      "status": "PASS",
+      "expected": 0.2488973551,
+      "actual": 0.24889735512042893,
+      "absolute_difference": 2.042893632037135e-11,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split3.C2_B31",
+      "status": "PASS",
+      "expected": 0.1468372469,
+      "actual": 0.1468372469286715,
+      "absolute_difference": 2.8671509610944668e-11,
+      "tolerance": 1e-06,
+      "reason": null
+    },
+    {
+      "id": "split3.coverage.benchmarks",
+      "status": "PASS",
+      "expected": 145,
+      "actual": 145,
+      "reason": null
+    },
+    {
+      "id": "split3.coverage.pairs",
+      "status": "PASS",
+      "expected": 13023,
+      "actual": 13023,
+      "reason": null
+    },
+    {
+      "id": "package.model.py",
+      "status": "PASS",
+      "expected": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "actual": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "reason": null
+    },
+    {
+      "id": "package.frozen_model.py",
+      "status": "PASS",
+      "expected": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "actual": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "reason": null
+    },
+    {
+      "id": "package.C2_r1.zip",
+      "status": "PASS",
+      "expected": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "actual": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "reason": null
+    }
+  ],
+  "experiment_reruns": 0
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "split3": {
+    "status": "COMPLETE",
+    "metrics": {
+      "C2_ALC": 0.18484017662654537,
+      "C2_B0": 0.24889735512042893,
+      "C2_B31": 0.1468372469286715
+    },
+    "coverage": {
+      "benchmarks": 145,
+      "pairs": 13023
+    }
+  }
+}

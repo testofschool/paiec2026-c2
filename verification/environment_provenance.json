@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "status": "APPROVED_REPRODUCTION_LOCK",
+  "scope": "Recorded source evidence plus the author-approved reproduction lock. No dependency imports, installation, reruns or network access were performed by this update.",
+  "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+  "reference_summary_sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+  "split2": {
+    "status": "EXACT_HISTORICAL_LIBRARY_PRODUCER_UNVERIFIABLE",
+    "python": {
+      "version": "3.10.11",
+      "status": "RECORDED",
+      "evidence": [
+        "split2_runtime_receipt",
+        "split2_driver_source",
+        "split2_environment_config"
+      ],
+      "qualification": "The runtime receipt records this version. The matching driver selects the same isolated environment whose configuration records this version."
+    },
+    "exact_producing_library_versions": {
+      "numpy": null,
+      "pandas": null,
+      "pyarrow": null,
+      "scipy": null
+    },
+    "current_environment_metadata": {
+      "status": "CURRENT_METADATA_ONLY_NOT_HISTORICAL_BYTE_BINDING",
+      "include_system_site_packages": true,
+      "configuration_sha256": "027d4ca370715b344fb5633a2cc26fbea162841b456f7b0add21b45f888604f9",
+      "distribution_location_role": "Inherited system distributions; the isolated environment's own distribution metadata contains only its installer and additional training-tool packages.",
+      "imports_performed": false,
+      "complete_package_byte_verification": "UNRUN",
+      "distributions": [
+        {
+          "name": "numpy",
+          "version": "2.2.6",
+          "metadata_sha256": "91d66d0d60ad467c679555c0e12ac739bb395940dc22bc5a39d45780aba129ad",
+          "metadata_bytes": 62048
+        },
+        {
+          "name": "pandas",
+          "version": "2.3.3",
+          "metadata_sha256": "40ee953dc7ca155840b639a1881ff84578075187fce0ac20eeda55a7fa0d9a90",
+          "metadata_bytes": 91215
+        },
+        {
+          "name": "pyarrow",
+          "version": "24.0.0",
+          "metadata_sha256": "c006cc50875d58fc9454198ea054ee79a834b6d3b7067161bc5306b337d4647f",
+          "metadata_bytes": 3031
+        },
+        {
+          "name": "scipy",
+          "version": "1.15.3",
+          "metadata_sha256": "98a671c6721432d60306593cdb7903477473d3b712544c666482ed113864f676",
+          "metadata_bytes": 61959
+        },
+        {
+          "name": "python-dateutil",
+          "version": "2.9.0.post0",
+          "metadata_sha256": "a9d436da322be808332f98d88325998e87cb693a678a9969feb4cfad729a6e93",
+          "metadata_bytes": 8354
+        },
+        {
+          "name": "six",
+          "version": "1.17.0",
+          "metadata_sha256": "562042078c2752549f6d8a7c86dbc5dd708088a7be6d80672ec7b07100b72468",
+          "metadata_bytes": 1658
+        },
+        {
+          "name": "pytz",
+          "version": "2025.2",
+          "metadata_sha256": "e620e4e1f9f1c8019619388d4da496eb02119a13f35aaad55f022694a3c81f6c",
+          "metadata_bytes": 22374
+        },
+        {
+          "name": "tzdata",
+          "version": "2025.2",
+          "metadata_sha256": "c2cc876ee200b84d1b8bee22290bc673ae4cf8e8be1a85cd2909a2715215794b",
+          "metadata_bytes": 1415
+        }
+      ],
+      "qualification": "These resident metadata files confirm the currently available versions and agree with the earlier report. They are not an immutable record of all bytes imported by the historical score-producing process."
+    },
+    "related_environment_record": {
+      "status": "SUPPORTING_RECORD_ONLY",
+      "versions": {
+        "numpy": "2.2.6",
+        "pandas": "2.3.3",
+        "pyarrow": "24.0.0",
+        "scipy": "1.15.3"
+      },
+      "evidence": [
+        "earlier_environment_report",
+        "sparse_backend_environment_review"
+      ],
+      "qualification": "The earlier report explicitly identifies these as versions of its report interpreter. It records the same isolated-environment selection as the split2 driver. These records do not bind dependency metadata or package bytes to the actual score-producing process."
+    },
+    "sample_checkpoint_source_binding_verified": true,
+    "new_numeric_execution": "UNRUN",
+    "historical_provenance_limit": "The score-checkpoint writer binds evaluator/model/input hashes but does not record library versions or installed dependency hashes. The reviewed records do not establish an immutable per-library environment chain for the split2 producing process. Supporting versions must not silently become an exact producer lock.",
+    "reproduction_environment_status": "APPROVED_REPRODUCTION_LOCK"
+  },
+  "split3": {
+    "status": "RECORDED_ENVIRONMENT_RESTORATION_FAILED",
+    "recorded_versions": {
+      "python": "3.12.14",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "pyarrow": "25.0.1",
+      "scipy": "1.18.1"
+    },
+    "evidence": [
+      "split3_dependency_receipt",
+      "split3_producer_source",
+      "split3_execution_report",
+      "dependency_mismatch_confirmation"
+    ],
+    "qualification": "The dependency receipt records these versions and the execution report identifies the isolated split3 interpreter. Its currently restored five installed distribution RECORD files mismatch the authoritative receipt hashes. Those restored package bytes cannot be treated as a verified executable environment.",
+    "restored_distribution_record_mismatches": 5,
+    "current_package_imports": "UNRUN",
+    "new_numeric_execution": "UNRUN",
+    "reproduction_environment_status": "APPROVED_REPRODUCTION_LOCK"
+  },
+  "single_environment_lock": {
+    "status": "APPROVED_REPRODUCTION_LOCK",
+    "recorded_interpreter_versions_differ": true,
+    "related_library_version_records_differ": true,
+    "reason": "The author selected this common reproduction environment despite the distinct historical environment records. It is not claimed to be the exact producer environment for either historical score set.",
+    "versions": {
+      "implementation": "CPython",
+      "python": "3.10.11",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "pyarrow": "24.0.0",
+      "scipy": "1.15.3"
+    },
+    "controls": {
+      "applies_to": [
+        "split2",
+        "split3"
+      ],
+      "single_environment_only": true,
+      "second_environment_allowed": false,
+      "absolute_metric_tolerance": 1e-06,
+      "on_absolute_metric_difference_above_tolerance": "STOP",
+      "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+      "registered_values_changed": false,
+      "registered_hashes_changed": false
+    },
+    "installation": "UNRUN",
+    "installed_environment_verification": "UNRUN",
+    "split2_execution": "UNRUN",
+    "split3_execution": "UNRUN"
+  },
+  "official_checker": {
+    "status": "RESIDENT_SOURCE_VERIFIED",
+    "source_sha256": "abe3cae05f4b18450b36edca60faef8a39bdf21821f30ff195c3cc45e177c646",
+    "source_bytes": 27121,
+    "recorded_repository": "https://github.com/aims-foundations/paiec_baseline.git",
+    "recorded_revision": "82d330ddcdb16016a3ae9e048db7e588ba2c6a39",
+    "semantic_version": null,
+    "version_identifier": "Pinned revision plus exact source SHA256; no separate semantic version is declared in the reviewed checker source.",
+    "cli": "python check_submission_zip.py submission.zip",
+    "optional_cli_flag": "--static-only",
+    "optional_flag_scope": "Archive structure and declared files only; participant prediction and acquisition are not executed.",
+    "helper_source_sha256": "c6f2610f9c8b6cad8a2338ddc07a0cb25d40bca761a6628937a2cee2705a6267",
+    "matching_recorded_checker_digest": true,
+    "matching_resident_anchor_copy": true,
+    "evidence": [
+      "checker_source",
+      "checker_helper_source",
+      "official_anchor_receipt",
+      "historical_independent_validation"
+    ],
+    "new_checker_execution": "UNRUN"
+  },
+  "zip_builder": {
+    "status": "HISTORICAL_C2_BUILDER_SOURCE_IDENTIFIED",
+    "function": "package_candidate",
+    "current_source_sha256": "3e7ed4c68e0a746b21a81cb13e9c280b7d74df5b4e43135697c432fe7a6b62ef",
+    "archived_source_sha256": "ddbc9ab9b12e7bf13bf81f3700d9a253456e8a752bf34cc30f53286f12256451",
+    "archived_source_bytes": 47894,
+    "archive_manifest_binding_verified": true,
+    "serialization": {
+      "member_order": "Sorted member names",
+      "timestamp": "1980-01-01 00:00:00",
+      "mode_octal": "0644",
+      "compression": "ZIP_DEFLATED",
+      "compression_constructor_level": 9,
+      "zipinfo_member_level": "unspecified; preserve original writer block semantics"
+    },
+    "qualification": "This identifies the historical C2 development-package builder. The current source also enforces its original-fixture readiness gate. It does not establish the producing source for the separately registered revision ZIP.",
+    "registered_revision_zip_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+    "registered_revision_zip_builder": "BLOCKED_NO_DIRECT_SOURCE_RECEIPT_FOUND",
+    "evidence": [
+      "current_builder_source",
+      "archived_builder_source",
+      "builder_archive_manifest",
+      "historical_package_manifest"
+    ],
+    "new_zip_creation": "UNRUN"
+  },
+  "evidence": {
+    "split2_runtime_receipt": {
+      "sha256": "296b6cc00876dc7704218044ab428fa956a418f38461a9fe3bc906360bbf6ede",
+      "field": "python"
+    },
+    "split2_driver_source": {
+      "sha256": "b6d548b5f9ece9f01086af3735068e736ddcf28b087ff88a407020029437d0ce",
+      "lines": [
+        13,
+        26
+      ]
+    },
+    "split2_environment_config": {
+      "sha256": "027d4ca370715b344fb5633a2cc26fbea162841b456f7b0add21b45f888604f9",
+      "field": "version"
+    },
+    "split2_evaluator_source": {
+      "sha256": "e58ea02c8b494db458e3403b7ae8a899bc99d5fdbf8e28c3dccb94cb028c71ce",
+      "lines": [
+        170,
+        188
+      ]
+    },
+    "sample_score_checkpoint": {
+      "sha256": "c15e82eed9a9d241abab84b0ee2319080e9f32a9219d908cf7faf10bfab65db1",
+      "field": "sources"
+    },
+    "earlier_environment_report": {
+      "sha256": "6cfe2652aba74e847b43a22737c15a66cd31d10d20430fa3c6f8ac077e765c10",
+      "lines": [
+        2137,
+        2145
+      ]
+    },
+    "earlier_report_writer": {
+      "sha256": "00edf998a7f606dfceab1f283a0a4cade3b343147a3cc2e13159b6a56f45983d",
+      "lines": [
+        613,
+        623
+      ]
+    },
+    "sparse_backend_environment_review": {
+      "sha256": "c8c9a1df619ebef5fad3bb94625548300e8fba7fe77f24bd902ad512d342b2c5",
+      "field": "environment"
+    },
+    "split3_dependency_receipt": {
+      "sha256": "6aa6801edf60ee832a8c9df3380a49db1fcfba472510b0e390f3d79d919883fb",
+      "fields": [
+        "python_version",
+        "packages",
+        "cached_scipy.distribution"
+      ]
+    },
+    "split3_producer_source": {
+      "sha256": "795cf31b7b0d3cdaa969a9ba3444be3596ee702e26c9cd2551a3e5f5f4b67fca",
+      "lines": [
+        89,
+        318,
+        333
+      ]
+    },
+    "split3_execution_report": {
+      "sha256": "cd2986617574a74a42a8de2183dd2485ed54991dd168f299717d791a6eb1951c",
+      "line": 182
+    },
+    "dependency_mismatch_confirmation": {
+      "sha256": "bec8150d64b9fa6808c3a68bc262f9e775a2d58ce8815933e7dc7217500420f4",
+      "field": "status"
+    },
+    "checker_source": {
+      "sha256": "abe3cae05f4b18450b36edca60faef8a39bdf21821f30ff195c3cc45e177c646",
+      "lines": [
+        157,
+        173
+      ]
+    },
+    "checker_helper_source": {
+      "sha256": "c6f2610f9c8b6cad8a2338ddc07a0cb25d40bca761a6628937a2cee2705a6267"
+    },
+    "official_anchor_receipt": {
+      "sha256": "5e51ba962c2f35d5ef4854378ea91bd2691460f3c26f45b80ba6883ccfef608f",
+      "fields": [
+        "source_url",
+        "revision",
+        "hashes.checker"
+      ]
+    },
+    "historical_independent_validation": {
+      "sha256": "be338b6b304d32edd8122834afd5123d5c7bc7f631e6fcbda4f569693b32c6bb",
+      "field": "zip.checker_source_sha256"
+    },
+    "current_builder_source": {
+      "sha256": "3e7ed4c68e0a746b21a81cb13e9c280b7d74df5b4e43135697c432fe7a6b62ef",
+      "lines": [
+        419,
+        480
+      ]
+    },
+    "archived_builder_source": {
+      "sha256": "ddbc9ab9b12e7bf13bf81f3700d9a253456e8a752bf34cc30f53286f12256451"
+    },
+    "builder_archive_manifest": {
+      "sha256": "24b478bd8a5aa23c0c21ff1e9037a9ab89a7c65b6b5198e94bccfa40750e9df0",
+      "field": "files"
+    },
+    "historical_package_manifest": {
+      "sha256": "7e511f0f27d9473861501d60acf95d76a1caeda6caf1fae5554d3dc64b52a983",
+      "fields": [
+        "summary_package_receipt",
+        "checker_source"
+      ]
+    }
+  },
+  "privacy": {
+    "evidence_locations": "Neutral roles and exact content digests; private source locations and machine identifiers are omitted."
+  },
+  "limitations": [
+    "No complete installed-file or wheel verification was performed for the split2 environment.",
+    "Current environment contents cannot establish historical producing versions without an immutable dependency record.",
+    "Recorded package versions are not a successful fresh release-environment installation or a clean rerun.",
+    "The registered revision ZIP builder lacks a direct producing-source receipt in the reviewed bounded records.",
+    "The common reproduction lock is explicitly author-approved; exact historical producer dependency provenance remains UNVERIFIABLE. Any metric difference exceeding the unchanged 1e-6 tolerance requires STOP without a second environment."
+  ],
+  "status_scope": "Author approval of a common reproduction environment; exact historical producer provenance and actual installation remain separate.",
+  "author_approval": {
+    "date": "2026-10-10",
+    "scope": "One fixed reproduction environment for both registered splits; preserve expected values, exact hashes and the registered tolerance."
+  },
+  "exact_historical_producer_provenance": {
+    "status": "UNVERIFIABLE",
+    "split2": "Per-library producing versions and package bytes are not bound by an immutable producing-process receipt.",
+    "split3": "A different historical environment is recorded; its restored package records mismatch the authoritative receipt. The approved reproduction lock does not reinterpret those records."
+  },
+  "revision": {
+    "previous_sha256": "1d288e62b894fb0bcb4c38b819b7bb13549c2b696c21934e876e39f012cf6fc5",
+    "type": "author_environment_selection",
+    "numerical_execution": "UNRUN",
+    "installation": "UNRUN",
+    "expected_values_and_release_registration_unchanged": true
+  }
+}

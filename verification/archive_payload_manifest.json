@@ -1,0 +1,27 @@
+{
+  "reference_archive_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+  "payload_members": {
+    "README.md": "84932dd52a371b94c12c1f33b9355968aeba4bc2bb48f479582f19347af6bb03",
+    "frozen_model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+    "model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+    "prior.json": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9"
+  },
+  "archive_order": [
+    "README.md",
+    "frozen_model.py",
+    "model.py",
+    "prior.json"
+  ],
+  "date_time": [
+    1980,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "mode": 420,
+  "compression": "DEFLATE",
+  "compression_constructor_level": 9,
+  "zipinfo_member_level": "unspecified; preserve original writer block semantics"
+}

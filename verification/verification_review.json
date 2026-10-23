@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "status": "FIXED_SYNTHETIC_PASS",
+  "review_method": "static source review and stdlib-only synthetic self-tests",
+  "prior_reviewed_sha256": {
+    "compare_expected.py": "5db36a38ff3ee01e50d18a82df235cb1ac326ae783c48ecc92dc0c313111535e",
+    "scrub_scan.py": "a1979612df7ce5cbdd6f941ddb5f8fb74b3c89120cdb4574b74a69de12d4700a",
+    "expected_values.json": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+  },
+  "reviewed_sha256": {
+    "compare_expected.py": "a3ce076cfffeb8949f3ba8dc2d9c067d3e35d23fa5726cc0238e29e097e2e94c",
+    "scrub_scan.py": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+    "expected_values.json": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+  },
+  "findings": [
+    {
+      "id": "V001",
+      "source": "compare_expected.py",
+      "line": 47,
+      "issue": "Duplicate JSON object keys are silently overwritten within a receipt",
+      "mechanism": "Ordinary JSON parsing retains the final value for a repeated split, metric, coverage or status key. The later cross-file duplicate check cannot observe those conflicting earlier values.",
+      "smallest_correction": "Reject repeated object keys during JSON parsing; retain the existing cross-file merge behavior.",
+      "current_release_receipt_impact": "No actual contradictory receipt was examined; this is a concrete accepted-input parser gap.",
+      "resolution_status": "FIXED"
+    },
+    {
+      "id": "V002",
+      "source": "scrub_scan.py",
+      "line": 207,
+      "related_line": 150,
+      "issue": "ZIP expansion and nested-archive blocking depend on filename suffix",
+      "mechanism": "A ZIP container using another suffix is decoded as compressed bytes without examining member text. The same applies to a nested ZIP member whose filename has another suffix.",
+      "smallest_correction": "Identify supported ZIP containers from their bytes, regardless of filename, and block nested containers from their bytes.",
+      "current_release_receipt_impact": "No renamed archive was examined in the actual tree; this is a concrete scanner coverage gap.",
+      "resolution_status": "FIXED"
+    }
+  ],
+  "passed_source_checks": [
+    "Expected-values bytes are SHA-256 pinned before comparison",
+    "Tolerance is fixed to 1e-6 and hash tolerance is exact",
+    "Only COMPLETE split stages can provide metric values",
+    "Coverage requires integer benchmark and pair counts of 145 and 13023",
+    "Boolean and nonfinite metric values are rejected",
+    "Missing files, dataless files and incomplete stages cannot produce PASS",
+    "Conflicting split receipts across input files produce FAIL",
+    "Default full-comparison package model and ZIP paths are compared using exact byte hashes",
+    "Scrub match output contains locations and counts without matched content",
+    "Symlinks, known unsupported archives and unavailable content prevent a scrub PASS"
+  ],
+  "corrections": [
+    "Every JSON object level rejects duplicate decoded keys without exposing key contents.",
+    "Top-level ZIP containers are identified from bytes even when renamed or prefixed; member text is scanned.",
+    "Nested supported or known unsupported archive/compression containers are blocked based on bytes or suffix.",
+    "Known unsupported archive/compression signatures prevent a scrub PASS."
+  ],
+  "synthetic_test_evidence": [
+    {
+      "script": "compare_expected.py",
+      "arguments": [
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "SELF_TEST PASS 30",
+      "coverage": [
+        "existing immutable-value, exact-coverage and cross-file duplicate checks",
+        "conflicting split, nested metric, coverage and status duplicate keys",
+        "escape-equivalent duplicate keys",
+        "ordinary unique-key JSON accepted",
+        "selected split2 and split3 success, missing stage and tolerance failure",
+        "default both requires both stages",
+        "staged metrics-only excludes package checks explicitly",
+        "default full comparison still invokes required package checks"
+      ]
+    },
+    {
+      "script": "scrub_scan.py",
+      "arguments": [
+        "--self-test"
+      ],
+      "exit_code": 0,
+      "stdout": "SELF_TEST PASS 47",
+      "coverage": [
+        "existing pattern and disclosure checks",
+        "renamed and prefixed top-level ZIP member detection",
+        "renamed nested ZIP blocked",
+        "15 unsupported archive/compression examples tested top-level and nested",
+        "truncated ZIP magic blocked",
+        "ordinary uncompressed text accepted",
+        "human-authorized global policy correction covered for content and paths"
+      ]
+    }
+  ],
+  "preserved_registration": {
+    "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+    "numeric_tolerance": 1e-06,
+    "hash_tolerance": "exact"
+  },
+  "scientific_evaluations": 0,
+  "network_calls": 0,
+  "scope_limits": [
+    "The comparator checks receipt values and package bytes; it does not independently prove execution origin or individual score-row population.",
+    "The scrubber scans plain decoded text and ZIP members; unsupported recognized containers block completion. Content without a recognizable format signature is not a universal format decoder.",
+    "No public-data scan, scientific calculation or installation was performed."
+  ],
+  "superseded_reviewed_sha256": {
+    "compare_expected.py": "51bf2727086ae59afc6a53f5a6bfb176b0bc2eb7d809f4c5167bdb4d48a34bcd",
+    "scrub_scan.py": "384421f62552025a75640c2369ff538c87e84b8c3802a59622fb5476745254b5",
+    "expected_values.json": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+  },
+  "staged_comparison": {
+    "arguments": [
+      "--split split2|split3|both",
+      "--metrics-only"
+    ],
+    "default": "both splits and all exact package hashes",
+    "staged_scope_printed": true,
+    "registration_and_tolerance_unchanged": true,
+    "selected_coverage_unchanged": {
+      "benchmarks": 145,
+      "pairs": 13023
+    },
+    "proceeding_to_next_split_requires_prior_staged_check_exit_zero": true
+  },
+  "scrub_policy_correction_sha256": "cf63a4c9e096c7ec8f8f4b6381c7691c4a2b396ef0b193ff8223591a2abe311c"
+}

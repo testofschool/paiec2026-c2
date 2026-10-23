@@ -1,0 +1,1 @@
+OK: $PAIEC_RUN_DIR/dist/C2_r1.zip looks like a valid submission ZIP.

@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "status": "APPLIED_SYNTHETIC_PASS",
+  "date_kst": "2026-10-10T14:01:58.991798+09:00",
+  "authorization": "Human-authorized specification correction relayed by the coordinating task",
+  "full_user_scope": {
+    "globally_removed_forbidden_identifiers": [
+      {
+        "former_pattern_id": "P006",
+        "codepoints": [
+          67,
+          108,
+          97,
+          117,
+          100,
+          101
+        ]
+      },
+      {
+        "former_pattern_id": "P007",
+        "codepoints": [
+          67,
+          111,
+          100,
+          101,
+          120
+        ]
+      }
+    ],
+    "unchanged_forbidden_pattern_ids": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005"
+    ],
+    "unchanged_forbidden_token_codepoints": {
+      "P001": [
+        47,
+        85,
+        115,
+        101,
+        114,
+        115
+      ],
+      "P002": [
+        107,
+        97,
+        110,
+        103,
+        106,
+        117,
+        110,
+        103,
+        109,
+        105,
+        110
+      ],
+      "P003": [
+        103,
+        97,
+        110,
+        103,
+        106,
+        101,
+        111,
+        110,
+        103,
+        109,
+        105,
+        110
+      ],
+      "P004": [
+        68,
+        101,
+        115,
+        107,
+        116,
+        111,
+        112
+      ],
+      "P005": [
+        44060,
+        51064,
+        32,
+        50672,
+        44396
+      ]
+    },
+    "unchanged_credential_pattern_ids": [
+      "P101",
+      "P102",
+      "P103",
+      "P104",
+      "P105",
+      "P106",
+      "P107",
+      "P108",
+      "P109"
+    ],
+    "application": "All content, paths, archive member paths and location redaction use the corrected global token map.",
+    "coding_assistant_disclosure": "The separate mandated README disclosure is handled by the coordinating task.",
+    "identifier_specific_exceptions_added": 0
+  },
+  "scope_preservation_check": "Reversing only the token removal and aligned synthetic tests reconstructs the previous script SHA exactly.",
+  "prior_script_sha256": "384421f62552025a75640c2369ff538c87e84b8c3802a59622fb5476745254b5",
+  "final_script_sha256": "48198285d80f1aa526846f89781e5278cc3d4a42754c097af186c8861c7399bc",
+  "synthetic_test_evidence": {
+    "arguments": [
+      "--self-test"
+    ],
+    "exit_code": 0,
+    "stdout": "SELF_TEST PASS 47",
+    "retained": "Existing private-token, normalization, author-location, credential and archive tests",
+    "added": "Both removed identifiers accepted in content and paths, without location redaction"
+  },
+  "unchanged_artifact_bindings": {
+    "archival_prior": {
+      "sha256_before": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+      "sha256_after": "ebea4e925fa97a84d47ececce94b2c9bfc769020711500dfa83e0fbf1d1b1ff9",
+      "unchanged": true
+    },
+    "archive_payload_manifest_sha256": "f4a89cd195b5b2b1537930fdf588e1a572d981389d0b13fd737f125750c524f5",
+    "reference_archive": {
+      "registered_sha256": "70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d",
+      "modified_by_this_correction": false,
+      "actual_read_status": "NOT_PRESENT_AT_KNOWN_REFERENCE_LOCATION"
+    },
+    "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132"
+  },
+  "scientific_evaluations": 0,
+  "network_calls": 0,
+  "installations": 0
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "runtime": {
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "pyarrow": "24.0.0",
+    "scipy": "1.15.3"
+  },
+  "fresh_virtual_environment": true,
+  "include_system_site_packages": false
+}

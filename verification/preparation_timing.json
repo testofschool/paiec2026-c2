@@ -1,0 +1,9 @@
+{
+  "started_at_kst": "2026-10-10T13:40:53.491716+09:00",
+  "snapshot_at_kst": "2026-10-10T13:59:43.187627+09:00",
+  "elapsed_preparation_wall_seconds": 1129.695911,
+  "fresh_venv_wall_seconds": null,
+  "numeric_rerun_wall_seconds": null,
+  "installation_wall_seconds": null,
+  "qualification": "Preparation interval only; includes parallel source reviews and waiting, not benchmark runtime"
+}

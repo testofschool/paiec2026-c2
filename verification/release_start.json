@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "started_at_kst": "2026-10-10T13:40:53.491716+09:00",
+  "trigger": "c2e_report_exists",
+  "trigger_report_sha256": "9a86fc11335d332ba1826bb91d3116fbe8b15cf9957185925d2a4469cf5d87b8",
+  "release_target": "C2",
+  "reason": "Report is a dependency integrity stop; five C2E gates were not run and no replacement passes exist.",
+  "expected_values_sha256": "63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132",
+  "frozen_split2_reference_sha256": "15504d62061413e8ab560b92d8b98b8cbb16f7afa3ee20db7f44e4ec4684c90a",
+  "release_reruns_before_registration": 0,
+  "installation_sessions": 0,
+  "status": "STARTED_PREPARATION"
+}
