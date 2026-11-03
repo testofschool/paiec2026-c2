@@ -41,5 +41,41 @@
     },
     "values_origin": "Existing frozen summary, before any release rerun"
   },
-  "author_correction": "스펙의 split2 기대값이 5자리 반올림값으로 잘못 기재됨(스펙 작성자 오기) → 동결 summary.json 원시값으로 정정, 2026-10-10 저자 승인"
+  "author_correction": "스펙의 split2 기대값이 5자리 반올림값으로 잘못 기재됨(스펙 작성자 오기) → 동결 summary.json 원시값으로 정정, 2026-10-10 저자 승인",
+  "C2s14": {
+    "registered_at": "2026-11-03T09:59:16.721468+00:00",
+    "registration_scope": "release expectation freeze after the pre-registered v17 selection; not a new model selection",
+    "sigma_scale": 14.0,
+    "split2": {
+      "C2_ALC": 0.17963398194738417,
+      "C2_B0": 0.24893649649887994,
+      "C2_B31": 0.13601261754705557,
+      "frozen_ALC": 0.20153339327580172
+    },
+    "split3": {
+      "C2_ALC": 0.1797050011946836,
+      "C2_B0": 0.24889735512042893,
+      "C2_B31": 0.13630444771760847
+    },
+    "tolerance": 3e-05,
+    "evaluation_artifacts": "fresh full M5 refit; six folds; unchanged stock evaluator",
+    "package_sha256": {
+      "C2s14_r1.zip": "88c20fdc7e3b436a8acd9187329a07eb5345e9ee75b80f5d5d0c3b2105775348",
+      "README.md": "f7caee19bcdad8058e424be97e56260998da99b1f8d8e2cb9675cdd83d0c6449",
+      "frozen_model.py": "1d84ecb67c8b772a3719078bf2ca067d2bb0802ba36489e45181d4886bd4dcc6",
+      "model.py": "14ed10f59580da8d25deb41eb4cf5d945b94f31aacf7e995f2cccc424e2756d8",
+      "prior.json": "43b12b4362f0cba8c316a688d404fbfd4e71856e5faa42b1c53b27a366a4dedc"
+    },
+    "packaged_sigma_delta2": 7.358513235330725,
+    "packaged_sigma_delta2_unscaled": 0.5256080882379089,
+    "held_expectations": {
+      "fresh_public_refit": "NOT_REGISTERED: the newly refitted full-pool variance differs from the historical archival prior. See release receipt for observed values."
+    },
+    "prior_provenance": "Packaged prior preserves the historically registered C2 base exactly and scales only c2 variance. Freshly refitted public prior is retained separately; its variance is not substituted into the package.",
+    "legacy_script_limitations": [
+      "compare_expected.py still checks the preserved C2 blocks",
+      "build_zip.sh remains hash-pinned to the historical archival payload",
+      "official_checker.sh ignores positional ZIP path; named new ZIP was checked directly as well as through an isolated wrapper alias"
+    ]
+  }
 }

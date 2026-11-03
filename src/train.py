@@ -13,6 +13,7 @@ from corehelpers import measure as source
 from corehelpers.io import atomic_json, capture_inputs, create_output, source_hashes, validate_inventory
 
 HERE = Path(__file__).resolve().parent
+SIGMA_SCALE = 14.0  # selected 2026-11-03, pre-registered v17 arm A1
 FIXED_OPTIONS = {'outcomes': 'all recorded binary trials', 'target': 'log((k+1)/(n-k+1)), equal-item benchmark centering',
     'theta_prior_variance': 4.0, 'theta_prior_mean': 'log((k+1)/(n-k+1))',
     'item_prior_variance': 1.0, 'intercept_prior_mean': 0.0, 'intercept_prior_variance': 4.0,
@@ -65,14 +66,17 @@ def fit_offsets(inventory):
         gc.collect()
     for fold in range(6):
         training = [x for x in completed if x['fold'] != fold and x['items']]
-        sigma2 = max(1e-8, sum(x['offset_sum_squares'] for x in training) / sum(x['items'] for x in training))
+        sigma2_unscaled = max(1e-8, sum(x['offset_sum_squares'] for x in training) / sum(x['items'] for x in training))
+        sigma2 = sigma2_unscaled * SIGMA_SCALE
         atomic_json(HERE / ('fold_' + str(fold) + '_config.json'), {
-            'fold': fold, 'sigma_delta2': sigma2, 'training_benchmarks': [x['bench'] for x in training],
+            'fold': fold, 'sigma_delta2': sigma2, 'sigma_delta2_unscaled': sigma2_unscaled, 'training_benchmarks': [x['bench'] for x in training],
             'training_items': sum(x['items'] for x in training),
             'failed_fit_benchmarks': [x['bench'] for x in training if not x['success']]})
     training = [x for x in completed if x['items']]
+    sigma2_unscaled = max(1e-8, sum(x['offset_sum_squares'] for x in training) / sum(x['items'] for x in training))
     atomic_json(HERE / 'public_config.json', {
-        'sigma_delta2': max(1e-8, sum(x['offset_sum_squares'] for x in training) / sum(x['items'] for x in training)),
+        'sigma_delta2': sigma2_unscaled * SIGMA_SCALE,
+        'sigma_delta2_unscaled': sigma2_unscaled,
         'training_benchmarks': [x['bench'] for x in training],
         'training_items': sum(x['items'] for x in training),
         'failed_fit_benchmarks': [x['bench'] for x in training if not x['success']]})
