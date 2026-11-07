@@ -2,8 +2,6 @@
 
 Status: registration-machine (Apple M1 Max, 2026-10-10) fresh reproduction: 25 checks passed, 0 failed, 0 blocked. A 2026-10-22 fresh copy on other hardware (Apple M5 Max) rebuilt the ZIP, model and frozen predictor byte-exactly, reproduced frozen ALC and C2 B0 within 3e-11, and showed cross-machine variation of up to 2.8e-5 on the three refit-dependent C2 metrics (split2 C2 ALC, split3 C2 ALC, split3 C2 B31; details in REPRODUCTION_NOTE.md). The 1e-6 gate in compare_expected.py is the author's same-machine exactness check; a rerun on different hardware should expect differences of that order.
 
-C2-sigma14 update (2026-11-03): `SIGMA_SCALE = 14.0` is selected by the pre-registered v17 prior-width arm. The fresh M5 split2/split3 evaluations and new `dist/C2s14_r1.zip` are validated locally; the previous `dist/C2_r1.zip` is preserved. See the C2s14 expectation block and `verification/C2s14_release_receipt.json`. Local preparation does not establish a new external submission.
-
 Requirements: CPython 3.10.11, requirements.lock (8 pins), PAIEC_PUBLIC_DATA_DIR (measurement-db public tables, 5,080,479,573 bytes), PAIEC_CHECKER_DIR, ≥ 13 GiB RAM (peak RSS 12.76 GB observed).
 
 LLM coding assistants (Claude, Codex) were used for code writing and review; all numbers come from the scripts in this repository.
@@ -49,8 +47,6 @@ checker and helper digests before running its default full mode. The prediction
 smoke test executes; the optional acquisition hook is skipped because the
 registered archive contains no `labeling.py`. That separately supplied code is
 not included under this release's MIT license.
-
-The command block below is retained unchanged as the legacy C2 sequence. The new training constant scales the fold variances by 14; the unchanged `compare_expected.py` still reads the legacy C2 blocks, while the C2s14 values are registered separately. The archival builder remains pinned to the old payload and rejects changed prior/README bytes; the new ZIP was built deterministically outside the source tree with the same member metadata. The official checker was bound to the actual new ZIP, including a direct named-archive check. These scope limits and actual run receipts are recorded in `verification/C2s14_release_receipt.json`.
 
 Exact sequence from the
 root of this repository, with CPython 3.10.11 available as
@@ -110,17 +106,10 @@ training and intermediates, plus space for the virtual environment.
 | split3 | C2 ALC | 0.1848401766 |
 | split3 | C2 B0 | 0.2488973551 |
 | split3 | C2 B31 | 0.1468372469 |
-| split2 | C2-sigma14 ALC | 0.17963398194738417 |
-| split2 | C2-sigma14 B0 | 0.24893649649887994 |
-| split2 | C2-sigma14 B31 | 0.13601261754705557 |
-| split2 | C2-sigma14 frozen ALC | 0.20153339327580172 |
-| split3 | C2-sigma14 ALC | 0.17970500119468361 |
-| split3 | C2-sigma14 B0 | 0.24889735512042893 |
-| split3 | C2-sigma14 B31 | 0.13630444771760847 |
 
-The added C2-sigma14 rows use 3e-5 tolerance for a fresh refit (1e-12 applies when reusing the exact M5 fold priors). Legacy C2 absolute tolerance is 1e-6. Model, frozen predictor and archival ZIP hashes
-must match exactly. The original C2-only `verification/expected_values.json`, before the added C2s14 block, was registered before
-any legacy release rerun; its SHA256 was
+Absolute tolerance is 1e-6. Model, frozen predictor and archival ZIP hashes
+must match exactly. `verification/expected_values.json` was registered before
+any release rerun; its SHA256 is
 `63011992452eeec465fef451d0024a50f1e11060836df6b4da072c5be92a7132`.
 
 Training recomputes the six outer-fold priors and variance fits from public
