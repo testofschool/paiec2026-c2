@@ -1,0 +1,88 @@
+{
+  "status": "NOT_SPECIFIED",
+  "values": {
+    "tex_pending_ids": [
+      "M0",
+      "M2",
+      "M3",
+      "M4",
+      "M5",
+      "M6"
+    ],
+    "tex_pending_lines": [
+      {
+        "line": 38,
+        "ids": [
+          "M0"
+        ]
+      },
+      {
+        "line": 59,
+        "ids": [
+          "M5"
+        ]
+      },
+      {
+        "line": 100,
+        "ids": [
+          "M2",
+          "M6"
+        ]
+      },
+      {
+        "line": 106,
+        "ids": [
+          "M2"
+        ]
+      },
+      {
+        "line": 140,
+        "ids": [
+          "M3"
+        ]
+      },
+      {
+        "line": 150,
+        "ids": [
+          "M5"
+        ]
+      },
+      {
+        "line": 172,
+        "ids": [
+          "M4"
+        ]
+      },
+      {
+        "line": 201,
+        "ids": [
+          "M2",
+          "M3",
+          "M5"
+        ]
+      },
+      {
+        "line": 228,
+        "ids": [
+          "M5"
+        ]
+      }
+    ],
+    "handoff_track_headings": [
+      "## T0. 환경 점검 (기록만, 전부 `out/T0.json`)",
+      "## T1. 저장소·데이터·재현 관문",
+      "## T2. M0·M2·M6 — 개수 확인과 단순 기준선 (`analysis/camera_ready/baselines.py`)",
+      "## T3. M3 — 벤치마크당 적은 쌍 (`analysis/camera_ready/sparse_caps.py`)",
+      "## T4. M5 — 신뢰도 (`analysis/camera_ready/reliability.py`)",
+      "## T5. M4 — C2E 완료 영수증 (데이터 없이 가능)",
+      "## T6. 묶기",
+      "## T7. QA (보고에 그대로 붙인다)"
+    ]
+  },
+  "measured_at": "2026-11-19T06:23:25.830799+09:00",
+  "inputs": {
+    "CODEX_PAIEC_v21_camera_ready_20261119.md": "bafc3b16c3103b16c86d76cb8842dc36fd808f05f02b36b88ba0317b081f5a24",
+    "paiec_camera_ready.tex": "be36e88aa3b67cf0df3ba774ec7da92f99d14786a8a644adb5add989af5f47df"
+  },
+  "note": "M1 has no measurement definition in the handoff or pending marker in the draft. Source-level preregistration checks are reported separately."
+}

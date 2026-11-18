@@ -1,0 +1,8 @@
+{
+ "schema_version": 1,
+ "note": "Codabench formative records for the submitted archive C2_r1.zip (sha256 70ff16e31d76195fc07c487a446c0a17f3f2fd63f234d81035f05e9f7e6ae31d). Scores, times and status were read from the participant's Codabench 'My Submissions' screen on 2026-11-03. Pairs, cells, B0 and B31 were transcribed from the submission detail screen on 2026-10-09 and have not been re-read since; no screen capture is retained.",
+ "records": [
+  {"submission_id": 971075, "file": "1_C2_r1.zip", "submitted_kst": "2026-10-09 14:55", "status": "Finished", "score": 0.178742, "score_read_on": "2026-11-03", "pairs": 9, "cells": 491, "b0": 0.2798, "b31": 0.1505, "detail_fields_reverified": false},
+  {"submission_id": 971133, "file": "1_C2_r1.zip", "submitted_kst": "2026-10-09 15:24", "status": "Finished", "score": 0.173846, "score_read_on": "2026-11-03", "pairs": 9, "cells": 486, "b0": 0.2565, "b31": 0.1455, "detail_fields_reverified": false}
+ ]
+}

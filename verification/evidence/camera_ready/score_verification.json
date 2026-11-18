@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "pairs": 13023,
+  "benchmarks": 145,
+  "responses_per_method_budget": 34270277,
+  "pair_fields_compared": [
+    "C2_alc",
+    "C2_b0",
+    "C2_b1",
+    "C2_b3",
+    "C2_b7",
+    "C2_b15",
+    "C2_b31",
+    "frozen_alc",
+    "frozen_b0",
+    "frozen_b1",
+    "frozen_b3",
+    "frozen_b7",
+    "frozen_b15",
+    "frozen_b31"
+  ],
+  "max_absolute_difference_by_field": {
+    "C2_alc": 0.0,
+    "C2_b0": 0.0,
+    "C2_b1": 0.0,
+    "C2_b3": 0.0,
+    "C2_b7": 0.0,
+    "C2_b15": 0.0,
+    "C2_b31": 0.0,
+    "frozen_alc": 0.0,
+    "frozen_b0": 0.0,
+    "frozen_b1": 0.0,
+    "frozen_b3": 0.0,
+    "frozen_b7": 0.0,
+    "frozen_b15": 0.0,
+    "frozen_b31": 0.0
+  },
+  "pair_tolerance": 1e-09,
+  "cap_population_expected_from_full_split": {
+    "1": 145,
+    "2": 277,
+    "4": 519,
+    "8": 928,
+    "16": 1535
+  },
+  "weighted_sparse_ALCs_checked": true,
+  "all_six_reliability_totals_and_ECE_verified": true,
+  "official_pair_table_sha256": "26bd0698cbd2736f2c876b1b7c39cf362831184ac4464151c1d1e56166dde68a",
+  "validation_script_sha256": "3b85d02cc3689958b29d00e73554bc576bfad5f0c0a1f4dcaac4cb9ac46930d2"
+}

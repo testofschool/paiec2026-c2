@@ -1,0 +1,304 @@
+{
+  "M2": {
+    "status": "RECOMPUTED_MISMATCH",
+    "values": {
+      "alc": 0.23658341900552435,
+      "brier": {
+        "0": 0.25,
+        "1": 0.3480964853358777,
+        "3": 0.23265515028476416,
+        "7": 0.20020589062893798,
+        "15": 0.18664356826081768,
+        "31": 0.1806320010344484
+      },
+      "C2_minus_baseline": -0.05170431246149222,
+      "C2_minus_baseline_ci95": [
+        -0.0592925777995277,
+        -0.04237613267700621
+      ],
+      "baseline_minus_C2_ci95": [
+        0.04237613267700621,
+        0.0592925777995277
+      ],
+      "C2_fold_wins": 6,
+      "fold_C2_minus_baseline": {
+        "0": -0.0390292975246057,
+        "1": -0.0626303608361527,
+        "2": -0.04499459003210482,
+        "3": -0.04874551550964365,
+        "4": -0.05883806331069995,
+        "5": -0.03020368201119481
+      }
+    },
+    "reference_displayed": {
+      "alc": 0.2368,
+      "brier": {
+        "0": 0.25,
+        "1": 0.349,
+        "3": 0.233,
+        "7": 0.2002,
+        "15": 0.1866,
+        "31": 0.1805
+      },
+      "baseline_minus_C2_ci95": [
+        0.0427,
+        0.0595
+      ]
+    },
+    "reference_absolute_differences": {
+      "alc": 0.00021658099447566248,
+      "b0": 0.0,
+      "b1": 0.0009035146641222513,
+      "b3": 0.00034484971523585095,
+      "b7": 5.890628937993414e-06,
+      "b15": 4.3568260817694604e-05,
+      "b31": 0.00013200103444840905,
+      "ci_0": 0.00032386732299378995,
+      "ci_1": 0.00020742220047229726
+    },
+    "tolerance": 0.0005
+  },
+  "M6": {
+    "status": "MEASURED",
+    "values": {
+      "alc": 0.20582350300734464,
+      "brier": {
+        "0": 0.25,
+        "1": 0.22743682738289328,
+        "3": 0.20776955665151034,
+        "7": 0.1938640550298212,
+        "15": 0.18498027773038417,
+        "31": 0.18013359648422847
+      },
+      "C2_minus_baseline": -0.020944396463312535,
+      "C2_minus_baseline_ci95": [
+        -0.030374127095344938,
+        -0.009470716592219456
+      ],
+      "baseline_minus_C2_ci95": [
+        0.009470716592219456,
+        0.030374127095344938
+      ],
+      "C2_fold_wins": 6,
+      "fold_C2_minus_baseline": {
+        "0": -0.014374392065445794,
+        "1": -0.035704377743350266,
+        "2": -0.012859138954804174,
+        "3": -0.007855071270402065,
+        "4": -0.014876916369481137,
+        "5": -0.005852176177874417
+      }
+    }
+  },
+  "adapter_gate": {
+    "status": "PASS",
+    "tolerance": 1e-09,
+    "observed": {
+      "C2_ALC": 0.18487910654403214,
+      "frozen_ALC": 0.2015333932758017
+    },
+    "absolute_differences": {
+      "C2_ALC": 0.0,
+      "frozen_ALC": 0.0
+    }
+  },
+  "bootstrap": {
+    "clusters": "benchmark",
+    "pair_weight": "equal",
+    "replicates": 2000,
+    "seed": 0,
+    "interval": "percentile 2.5/97.5; loss difference, negative C2 minus baseline favors C2"
+  },
+  "scoring_callbacks": {
+    "hash_definition": "SHA-256 of UTF-8 inspect.getsource, including decorator when present",
+    "source_sha256": {
+      "load_empirical": "8f7a112d67538c56904b5c12b35aee639b5fb555a276dbe839be752a1567237a",
+      "score_partitions": "6798ab6fe9c441c7ea6f46e40f09aa5d7705ae834498e1b29b791abdbe9c3319"
+    },
+    "scoring_entry": "reliability.py --with-baselines supplies the exact split2 partitions",
+    "binding_note": "Callback source digests recorded at aggregation. Both callback definitions were unchanged during the scoring run."
+  },
+  "source_search": {
+    "scored_original": "NOT_IDENTIFIED",
+    "checked": [
+      "PAIEC2026 research and release trees",
+      "historical PAIEC2026 headroom, report, and p2probe trees",
+      "PAIEC camera-ready audit and local release copies",
+      "PAIEC_v14_evidence.tar.gz and neighboring evidence"
+    ],
+    "findings": [
+      "Submitted TeX and extracted manuscript reproduce the displayed row.",
+      "The headroom report supplies a predictor hash. Its summary scores frozen and A–D.",
+      "The v14 archive covers sparse and S2WISH comparisons. Its score tables lack an empirical row."
+    ]
+  },
+  "official_model": {
+    "repo": "https://github.com/aims-foundations/paiec_baseline",
+    "history_commit": "8629bd30f39a4067739f711c45dffedf59329597",
+    "path": "empirical_mean/model.py",
+    "sha256": "1e570641dd9b981baae988779b904ae58ad610a99bd44fb861647c60c93e935e",
+    "subject_equality_fields": [
+      "normalized_name",
+      "provider",
+      "release_date",
+      "access_date",
+      "harness",
+      "harness_version",
+      "reasoning_effort",
+      "subject_features_extra"
+    ],
+    "label_rule": "Pool matching visible attributes and benchmark_id. Beta(1,1) uses the target raw pair alone."
+  },
+  "pairs": 13023,
+  "benchmarks": 145,
+  "inputs_per_benchmark_sha256": {
+    "abstract_reason": "a0819862abf9d61dd315ba7ffc01569f7a93d77eb82a8874c984125c9311dc6e",
+    "adaptivestep": "f1b6e208cf273495f6a2947147402e6344a18530a7c8d875618e1fe89779aa1f",
+    "aegis": "093b56a33d0815429c9544ea718c913c6aeddb329b6529e543b6704602f7e76a",
+    "afrieval": "d5363d555b61ce00ba6c8c99f05b80adf143ffe8c991c86e9cef0a090d27988c",
+    "afrimedqa": "4fc03c5f59775b69727a68f55056b7ce86a8a25165c6f314524632189bf78ec4",
+    "agentic_review_perturbation": "e0ed8b2b314112a461aa36559bab240dc89a91ad0cea51dfe0bdd22e15be5d45",
+    "agi_elo": "25d937f2195364dfdd638cd396d75033995e9f0e76545c8d9e1d39e9fe5c70b2",
+    "ai2d_test": "f07fe181be7c9e89f13933b8419f7ad65bb48a2fe1910f8023ed627f2c3808ff",
+    "algotune": "7e497a6b3569e17b81f96924045d14c2e77d76e0c2c0da45b07f93aec2ca2f3e",
+    "alignment_faking": "2737b6e8adda4532c9de2fb89efcf667ae6cc69027f5c8e915a8f438000855ed",
+    "alpha_sql": "37b0d064e5b2b30a24f7b6373e8ed8dcfa2c8beb6ae24fa0b1bd4728edc92089",
+    "appworld": "02b5ab72e3bde7d4468100b40c0848272af34b4e99e498aa274c7f1d3e6a5e3e",
+    "averimatec": "1e3678f3c5551268b42c8ffe4157a5ebb652a2f0712667ced1c999b6616ce454",
+    "babilong": "043a9c16b1f878f3d74ba71a372b2508c37795c432855bdd0d0e86ce488d02f1",
+    "bbq": "c57c0298e21bac752fad7a67f79d44a71d5fd88dd1c9818c5ffb50d04e307719",
+    "beavertails": "0d1ebf2e9a8265e0c017d911a169a8f5c4ab73f2b62124fd8c0af56228806d3a",
+    "benger": "2d05b0e635afb49567c1e24f7c889cffc3a33db63d0a23b8e823676b384e45c8",
+    "bertaqa": "2bd433289d2f6e39673745afa8aef338b4eaa97c2a487951ef5f1d54e8a04b08",
+    "bird_sql": "e1bd8e8c6fa9d84c0aa7dc8a1f6070fc9facb7448c4818654cecdff164eaa0eb",
+    "brace": "1abec564ec2d477ea6377a47027b5d7a8e1e2d4810d2ffc41dc01d8a41762e5e",
+    "braveguard": "e94828a9d314166f6848bbc434c9f9744b5c2b771381e28646b2c82faf3b1c8f",
+    "bridging_gap": "c03e4ac70fdaa9070bbbccaa4557008f0ea367280234cf214fdb4f0433fe5b48",
+    "causal_axioms": "1bd9689c65fc2637b7356fece8030449685c87241d8e69963aaa0c14d32ece96",
+    "cellverse": "96ec83d97cc532cc18e6a08083b9082524ab98e444bd629a9cb8d90876be2e68",
+    "ceval": "fa94759b9198624e6036dd1eb70d4362f9b131a52b1443eef8a0823398a4f9f9",
+    "clasheval": "c11a552e1b65af3792c8a3a279c6b662083bcc23247326bf04b018c5c1ecfbca",
+    "cmmlu": "15e2d8b1840f5593f712e84d02feae6886b7b5f9ca5e7dc8e40aee8a95d13626",
+    "critic_discernment_game": "ad89bab31114e7693f567afdaa24e14b04a2372f67e20234ec3f91b2cea30e24",
+    "crow": "0862b59c574bcd7483eef8917e8932c1fb8af2fdf9319ff774fbc822830e15ab",
+    "cruxeval": "b1f069bec99d757e8c6e0adcf732f0a02d8d589f715e92f1cfef4fa524cca90f",
+    "dave": "040c5b1ce6e131e9697f8cb1d9b4627878f82ad8e57f684f8922b7080882db06",
+    "devbench": "9f1b875c3e3e55d4c3cdd11a60a9de62b85afdac1b9374b60ff5f1694a1d5e6e",
+    "disco": "3adb36f2a75bcbe2a04cbf3b2f5b5b2e6af9be4e8a8c36f6dcb8b26cc09ccb13",
+    "editbench": "8a68bd6fc0cb30c37615bde01bac5a37099893938c0211366a9b771841ba9bf5",
+    "edu_circuit_hw": "c65311e10d61d99eb5b4a265bb43baf9d2cfdb20517036f85703bde6e04754d7",
+    "egoschema": "f340f3e17a56e1fadc7f8e920436743790c1a426eefd7c7b45c4ae119fa4b16c",
+    "elicitation_game": "300a16ccce6ec726d8d5dd33a96a02690189c1b48e7193c83a159a399768ca92",
+    "emoji_attack": "c285958976876a8903636e689439f68579f11aa2ac23b5c75db3fa76302fc8e8",
+    "engdesign": "a200f934e3a2c8533ef7edaf4398516ad3a7c67720249d4d3099a19263882678",
+    "enginemt_qa": "75864ec8dc6f797a6e4d29b4fa0751ba6f3b465b81d950ffa82b21586dc543d8",
+    "erbench": "a5b0b9084b7f6bfd3fb7f890c3e2d938e6d903eb1e1fccd33bd27a974fd77c47",
+    "evouna": "f130d3b08fc82816a23bf44335f72f9d6466d180d27482eb464a45950aecfeb5",
+    "exploitgym": "ce8beea835571784f2672e6eaa7b7177fca07666937f60da5431a3c64bcb355f",
+    "faithcot": "291292ed86fae31bde1f9dff9279aa48c355917951306c807229a1779c02261d",
+    "felm": "5f0266bee6802d3dc54dfe0e51a5699d2ed53464a7508822a66a976f34ede97e",
+    "fewshot_ttt_bbh": "6a985a8ecea36cfd7a08cae836ba90c1c8a73b038eb751e4fd41aede3ca46530",
+    "financebench": "57afe2e3555e0012e3180686a25030e286f95a3c2f779fa7a3e2f9681184471b",
+    "finegrain_t2i": "49d0a0899f7119a292571261e317aee1f5335afe5278aca273976f951c20b064",
+    "hallusionbench": "05b2d01ceccf138ee5c60ee07d257fa6c044e04ac2c8e2a3605bcd715d01243e",
+    "harmbench": "c24675c517f97796776ad87fe47f4e0b30e9c9d2f794b1bf4ab87e3fe6fbcaf8",
+    "healthadminbench": "59b539e8043fe11e0d232af049258990fbb75f7e7ff9e5a31f6a73722d8d6fa2",
+    "helm_afr": "dab8efab39a59a452234c9a8c950e304bd9bfce1c45e5023d227c71879b3afb6",
+    "helm_bbq": "d415639ccd46fd189130fc008d5adc20204bd063a4d8f046995134803aee5a82",
+    "helm_thaiexam": "d6bb160ac28d1a8dc9c90ee8a83e2dd59ee5424b1f31489ad47d8e7490211a21",
+    "hle": "4dbdb5249066c0b5062ce559d0e1886a7cf1c983fc1344280fb8dbd8b7016ee7",
+    "icpc2_code_selector": "0acb856a410d01245edea7d2b8b127f646f4d46179dd74ee44b76628299e9320",
+    "igakuqa": "e2de8d5aa8276422e784bc3d9b6ed0ac878ee389da07e7e431cbb134f47246d8",
+    "igakuqa119": "a9ba4ae102d9607016848dbdb537ff948fbca6320a414688fe4b39a035a70d04",
+    "ikp": "599c94dfb585afa3de3c783917cd91fdb03c271afe6e913afe9867127a8e2ee1",
+    "imagenet_hard": "f709fca4a60dcc43fb465c5a8d63826c86e60e037ca0c55be7c88e6b13a59375",
+    "interchangeable_token_embeddings": "fe6dca60261272beddf880fefe37c39fbf4c05b6d40c7251642a0a0ada2ebd9c",
+    "jailbreakbench": "79194817c3e9bb68eb7917161cff3bb2e86044d0d65e3dee06ce4fcb8960c187",
+    "judgetuning": "c6d6e39986e519289618cacb49681a171b648f4c14537244c40cda800fd805be",
+    "kernelbench": "158a00500ab3283e9c6ee2a32cce52cfd9b4dc1721658c92bb2b790facb5e87c",
+    "kmmlu": "8f1674979822e245e563c6e984395315293972743dcc21eb8930c015d87507ec",
+    "kormedmcqa": "61b8d6b59c6159195d12ab33ebefb7fb6f9afe6e7a6696f8d686aafc8623ed34",
+    "legal_rag_bench": "ce2c30e01e6c645a6ea0279946609c6cc617222c92fc8bdd2973629f5a5f2d7f",
+    "legalbench": "8b9a2c885b5fe08e1d68e715cfff249d37c7a5b1d3f291cf62857a3f0d5b684a",
+    "lingoly": "d475bee8e03fb880afdf7ffad0e98e42f21ec7f04044e52f5e5c1a17abd8a017",
+    "liveaopsbench": "cabc27d3cc9a3462b0ce5e112cec6c2ff1ee8ee5059db1b62b3bddb26eec113d",
+    "llm_bp_tag": "6acb61365e7ce0503f550baf9a2a3ddc851e7f8878628a8017fb74bd90a1d572",
+    "llm_uncertainty_bench": "e25965929a0b2a9d27c73005416787388595306ecb413cf7eae3d1acb07940c7",
+    "llmail_inject": "2920e024a08cdc67a08b24ddbd7bdad3cb975fae10e89ed8000ca0c06e3a2a96",
+    "llms_lean_formalization": "e90b08e034ff104c5f465525458b8f1b49da2d1f13c8dd73f4604750ac07d413",
+    "mathconstraint": "bdc00501ba121bd0f969f392ed57c4e4c8aec9f782b81b746eb0045ea5c7fe53",
+    "mathvista_mini": "acf7fa868f9b344c627a47f5d45bd035be0fc62dcdf29c9f1c30677747013c89",
+    "medhelm_ehr_sql": "5ad273415edb36645e8270380116584a9bc94a071c8ae6384263b1bd6624e258",
+    "medhelm_head_qa": "bae045fa9ba06def0f8ef91d80e9d326dcb2b00018c684044a0d1a778aa99191",
+    "medhelm_med_mcqa": "9d774e30fbaf0a0491545471397b1560fb56035ff086d6e840f6ae0b63f9e989",
+    "medhelm_med_qa": "b1b559365ee30b3dccb4d0d744fc7699c814ef8cfdee361a0184ebab4ae64544",
+    "medhelm_medbullets": "00968969dc1488e94bf8213cf450ffd9f8fbfd2ede4f7e8e61dd355f2b4a0d7a",
+    "medhelm_medcalc_bench": "f54df4164f601bb120c184e5667127c3cc9f47feaed834d15fd6475d107c2a01",
+    "medhelm_medec": "88dac3e6830749ccca7379cfd7329adb22f823c09760c775c436add762fd3137",
+    "medhelm_medhallu": "117c3925cfb0370f438508664ea136dc2bad850d186bb04015a2a28fab200fb9",
+    "medhelm_pubmed_qa": "18047e2546dbef04c7c4316f10d5c198343a240befaebf9dd4c3142dc3e4cdba",
+    "medhelm_race_based_med": "8357fa103140d44281e874aab1004de1dce00e239b2f187af1faae87e0f36f1d",
+    "mind2web": "fb1967fe137d623675290abac3f3285b2748d65b58b19c0b73cb6c9bbab64b25",
+    "mj_bench": "95b90b723b0cf9b5cf53c615317d91b0a6d7bcd344ce73fd5d965a18fa2c4b76",
+    "mmbench_v11": "09fba0035206026d01e9a813b5abaafb63af7ee2b64ba522f273c06e13b7ff78",
+    "mmlu": "6eb1207b3da913dfc74ad03df914f9ab8414c57656f7979d2babc38438e91991",
+    "mmlupro": "838e796fe03a27c6030f211fc71b0b12fb212bb8849841e6c5374b317fb7247e",
+    "monkey_power_laws": "95cb69ef046c60355214f78936b0ad3e4ae9f0fb57895f9a362b984874e5c3ce",
+    "morphkv": "07df3483c81a3491e624d56517852d1d1af9242f8dc84a9db27c79186889fbc4",
+    "mtbbench": "5f097faf3304001b0d55a8ad53a248dbd10d2edf6fad7b9980021f0a57f524eb",
+    "multi_swebench": "cdff1e91373d9c2b99584dc9c99902e814f6e719aa8685ff10a1605c91c02d57",
+    "naep_llm_students": "11319af182fdfa94ed3791b39319945af7c789a5f3075175c44ffbaf856dcad5",
+    "naturebench": "38fdbddfdf83e2059b5e5739b0c466f2759d7f495591fd92ad0045cace8200b5",
+    "nester": "a90d645557e509fd197e0fe6d394807971e4ffa1c2ecc324efbf99dcba9fdf22",
+    "nyu_ctf_bench": "adb4f9f38a1d97a0f0eb96d751ac95b7be8c1c4cc8be3a4cfc3630b55a1cbdd6",
+    "ood_prediction": "0ce9f8f3037f5aeaa6e1f009f01b6e4d56175686255e3697ea804d6d98335b3c",
+    "openbiorq": "c72e0a2653e3c2c07349a9c685aa775682a601cce4c65ac56c2e8434bd0465ac",
+    "os_harm": "3ca81399632ec7914f9f3e16fd6ffb7ab6a30e108c00d8be0561b81b309157ed",
+    "perfcodebench": "0b673f2923bddbdf73d405e682c645e5bac123631e415269fde02da5ec5e3f61",
+    "perumedqa": "1a9af7329a9c15a900720e9d58bb036b751d8a86b01c59f4e084edf2d7153a1c",
+    "pku_saferlhf": "6db744394e6e870afa01d1ab03ae8381a26cbcda6d9a0d40d5113a64f7f1e001",
+    "planbench": "3487aa6dd77cfc95269713fe2eb15db8d2d54d512f2f4c1eba245b7c5446b016",
+    "proofaug": "d85b90daeb94322b7a741f6bc25fd0acd765d9b1f0b5e184384a6b4cca90dba8",
+    "prox": "e20f9c8cd90aba22ac68d04b1a13c11f4126496a4597e84282c0d137068a428d",
+    "pxplore": "a43c651dff765bdbc49fc5fa3fcbabe9d11cbb78a571203f398b2344689e01be",
+    "real_webagents": "296bdafdc800df0bdf821ca78bd5cf1998fde4f23f66aebd4832a709e050b8e4",
+    "realtimeqa": "a63e27ecd13e4c49567335d71cf4b757e9d62939d2e1f5040f6bfd9dfc009b2d",
+    "reliancescope": "0eda344ffa6308e654734940f40254fce6238838d4a739b9b04a986e7f177c0e",
+    "researchcodebench": "f2a0cc4c2c96d2fef99e4198b1a4715aa0a8e80d2a599c619e0cdc1b60e23c2e",
+    "revolve": "74ae6b000ca6d778c734a794aa4d67cee568072f91db89b3e4670154145afbb9",
+    "risebench": "1dd6ea42a6d5474a3bad9c4d946b93de49d87b074311ea9e71a0bc3950108918",
+    "robust_reasoning_benchmark": "762014da3d1539e5b45355fee0e92e9754230d329cf73e0d9f0fff1792f3376d",
+    "safeagentbench": "99159570d3380d1d727b364b52be88f9d799a9578d605257d241e3f7c8e4ffe1",
+    "sgrades": "33a84d2eb427b4bea35aa757d4ea38ad7fdbd8fcb215d8c9550204dd4524cf90",
+    "sib200": "bc2479d50fb15b40032e933c944689c43b7b7586d2a5216df7f405c51290c6e0",
+    "sketchjudge": "bac5c74f7436a1d11c15faa75013532031456528bd8b0321d81453f53249b088",
+    "software_world_models": "3b2af5dcc72bcd60b184208b54e348422c17f51c0e8f18f002b1972e45eaaa24",
+    "statqa": "5be793d0818588dcb073a5fedf3f8d29e679c8e6bcb8f3f6bfc91f6cda4570ed",
+    "subjective_qa": "ee4246b86e197e82b2e866876876bde136fe0301b4dbde51886cb89c5edc8f24",
+    "sugarcrepe": "748d5c6eee6758b4c02233d1d8b2ea1e7c26c5de80b1ca8c4039415039cdeef4",
+    "sustainable_food": "71f8150652a24812d871c76444cee09d7accda8044088a887db38e3a2070638e",
+    "swe_rebench": "2b39618d6f80fbb2e8c64ca2887f7225cf0a8eb489327673ca3930e1bb82fb94",
+    "swe_smith": "feeada213e8c2060dd4eecb83ddea1d9d0b1609dee8c6c648b6634f3a5a231dd",
+    "swe_together": "df7963231704418596512afb14b86f16fd3061d0c645efc65ab8f3f7a4dd7aa0",
+    "swebench_live": "310a3dc4c4137e1b7d456c2c2e35f85e449bcad31e18a87209c322f2af8a68c9",
+    "swepolybench": "07424beca18982c17047f7141c734648d5de17235b279400f4eba7ef1e4cbaa0",
+    "tau2_bench": "e81b3e4922172b3f1b271bd38c9fca3498204e0c9b3afa5175622a1e6b56be6f",
+    "taubench": "5a8ae9ac01b148a4b8ba59cdb5c35269bb11e7108f9bcadcab80502e2800dfea",
+    "tensortrust": "54c75f6b539f61c008a74de4e2b8d88c89dae83f13b08ee5e3e06e0c0fb1f88d",
+    "truthfulqa_mc": "262929aa2b1ba27ea802e3eb6e794646a20a57b861e14fe523e6ea60011f398d",
+    "tulu_human_eval": "dd5510574efcaab95f6b5a8aca7dba44f4c5dcccf8d9971c69c3fba9c1b72b11",
+    "tumlu": "7e6d4bbc9c18b787870a9f27c78c1be94a2ba736340127e0281fa431960ff52d",
+    "visual_memory": "874884fc2c5260cb1972912ab02a235cd531197b9797f64c7399e749b4a0d806",
+    "visual_riddles": "ce0c3d8e5be4cf9fdf6b02a96518babf3d81ded8dec78e29ef51242e494871b7",
+    "visualwebarena": "b91cadb717efe46caa57fea2bb917c902aa48a25d660ed81a72d061cead2b7e4",
+    "vl_rewardbench": "7bf5cd0e5ee0365a1087fdd3b61caaed52c4d368b3ef48f917190cb919b6df8b",
+    "wikihow_agent": "363d0accc8e4d3738543ec5506bef3d63beebc6cb1aac99c6dfa7a52929b7458",
+    "wmt_mqm": "c29a66f516e1c40e871837566d476b36869bc7fa722aeb994109fc638fd7bf7b",
+    "workarena": "179547a58b42bf26ade5a4a028a642facb9678f017e32dc58f28d3138061a760",
+    "workbench_revisited": "95a44afb9baaddc39e97a7c1de4098e9e8d05d2677d5fb817b265322271197d7",
+    "worldcentralbanks": "ee3ebcf974b17c4b07483dcdb27656f289adacda0f16b3079a65cf9f868263f6"
+  },
+  "benchmark_sum_evidence": {
+    "verification/evidence/camera_ready/empirical_mean/benchmark_sums.csv": "7beda2f02b175640b19778b72b9467de1d4bbb9eed4064c6b8941c018952660a"
+  }
+}

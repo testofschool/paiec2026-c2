@@ -1,0 +1,35 @@
+{
+  "inventory_benchmarks": 163,
+  "benchmarks_any_pair_n_ge_5": 158,
+  "benchmarks_positive_eligible_pairs": 145,
+  "pairs_n_ge_5": 14436,
+  "scored_raw_pairs": 13023,
+  "benchmarks_without_pair_n_ge_5": [
+    "chartmuseum",
+    "ineqmath",
+    "mmmu_dev_val",
+    "naturalreasoning",
+    "radar"
+  ],
+  "retained_prior_benchmarks_without_eligible_pairs": [
+    "advprompter",
+    "aider",
+    "auditing_sabotage_bench",
+    "chi_bench",
+    "confagents",
+    "dbpa",
+    "ehrflowbench",
+    "haiid",
+    "live_agent_risk",
+    "mypcbench",
+    "scbench_long",
+    "txbench_pp",
+    "weavebench"
+  ],
+  "prior_pair_definition": "Benchmark × full subject configuration with at least 5 binary responses.",
+  "evaluation_pair_definition": "Benchmark × raw subject ID with at least 80 distinct observed items.",
+  "inputs": {
+    "prepared.json": "2f499331528157a92a90a663812f0203fd6da52eac5fa3a4a728de663b30d12d",
+    "pair_stats.csv": "74ed5d32c9f5714702384e43f79c7e0c58626ab186d5a48ca902a77aaa1f0ca6"
+  }
+}

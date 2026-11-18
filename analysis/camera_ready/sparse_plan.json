@@ -1,0 +1,20 @@
+{
+  "definition": "벤치마크마다 채점 자격이 있는 subject(서로 다른 item 80개 이상)를 `sha256('cap:' + benchmark + '|' + subject_id)`의 16진 문자열 오름차순으로 정렬해 앞에서 c개만 남긴다. 남긴 subject만으로 split2와 같은 시뮬레이션을 돈다(공개 라벨도 남긴 subject의 것만). fold별 prior와 fold별 `sigma_delta2`는 T1 학습 산출물을 그대로 쓴다. `beta15`는 pair별 `(1.5+s)/(3+n)`.",
+  "caps": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "methods": [
+    "frozen",
+    "C2",
+    "beta15"
+  ],
+  "statistics": "cap별 pair 수, 방법별 ALC와 예산별 Brier, `Base − C2`와 `beta15 − C2`의 차이와 benchmark-cluster bootstrap 95% CI(2,000회, seed 0), fold 승수.",
+  "design_check": "cap 1에서 `|C2_ALC − frozen_ALC| ≤ 1e-12`. 어긋나면 값을 기록하고 M3 전체에 `design_check: FAIL`을 붙인다.",
+  "split_rule": "Restrict the eligible subject population first; run frozen partition_cells on those retained subjects in its normal sorted order with the registered split2 benchmark seed. Only their labels enter model state.",
+  "bootstrap": "Resample benchmarks with replacement in sorted order; within each draw take the pooled pair-weighted mean difference. NumPy default_rng(0), 2000 replicas, percentile interval. A fold win is a strictly positive comparator-minus-C2 pair mean.",
+  "written_at": "2026-11-19T06:20:22.362912+09:00"
+}

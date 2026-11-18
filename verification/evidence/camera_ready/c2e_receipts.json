@@ -1,0 +1,324 @@
+{
+  "measured_at": "2026-11-19T06:23:29.652185+09:00",
+  "status": "NOT_FOUND",
+  "values": {
+    "stop_line_kst": "2026-10-20T23:59:00+09:00",
+    "discovered_directories": 26,
+    "fixture_directories": 26,
+    "folders": [
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/E0_COMPLETE/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/E0_NO_IMPROVEMENT/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/G2_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/P2_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/P2_FOLD1_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/P2_REPEAT/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/P2_SUCCESS/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 3,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": [
+          {
+            "filename": "0.done.json",
+            "benchmark": "0",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "1.done.json",
+            "benchmark": "1",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "2.done.json",
+            "benchmark": "2",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          }
+        ]
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/STOPPED/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 3,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": [
+          {
+            "filename": "0.done.json",
+            "benchmark": "0",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "1.done.json",
+            "benchmark": "1",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "2.done.json",
+            "benchmark": "2",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          }
+        ]
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/embargo_fail/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/embargo_mini_fail/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/embargo_no_gate/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/embargo_running/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v8/fixtures/missing_key/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/E0_COMPLETE/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/E0_NO_IMPROVEMENT/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/G2_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/P2_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/P2_FOLD1_FAIL/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/P2_REPEAT/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/P2_SUCCESS/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 3,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": [
+          {
+            "filename": "0.done.json",
+            "benchmark": "0",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "1.done.json",
+            "benchmark": "1",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "2.done.json",
+            "benchmark": "2",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          }
+        ]
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/STOPPED/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 3,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": [
+          {
+            "filename": "0.done.json",
+            "benchmark": "0",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "1.done.json",
+            "benchmark": "1",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          },
+          {
+            "filename": "2.done.json",
+            "benchmark": "2",
+            "sha256": "7717520110454c6532689344cdf5a63dddf8235f8d968feec83d1f1c6019600b",
+            "status": null,
+            "bound_complete": false,
+            "fixture": true
+          }
+        ]
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/embargo_fail/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/embargo_mini_fail/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/embargo_no_gate/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/embargo_running/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      },
+      {
+        "directory": "$PAIEC_SOURCE_ROOT/p2probe/v81/fixtures/missing_key/runner/outer_selected",
+        "fixture_directory": true,
+        "receipt_count": 0,
+        "bound_complete_count": 0,
+        "verified_before_stop_count": 0,
+        "receipts": []
+      }
+    ],
+    "duplicate_benchmarks_with_different_receipt_hashes": {},
+    "total_receipts_examined": 12,
+    "verified_benchmarks_before_stop": [],
+    "historical_completed_count": null
+  },
+  "note": "No historical count is inferred from missing run directories, inner-grid receipts, or test fixtures. A present-day receipt with no stop-line timestamp cannot certify historical completion."
+}
